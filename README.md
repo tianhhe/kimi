@@ -54,6 +54,8 @@
 | `templates/content-calendar.csv` | 内容排期表 | 内容团队 |
 | `templates/creator-roster.csv` | 达人池和投放进度表 | 达人运营 |
 | `templates/competitor-tracker.csv` | 竞品动态追踪表 | 竞品研究 |
+| `templates/research-to-content-pipeline.csv` | 研究/竞品/语料洞察转内容流水线 | 内容策略、PMM |
+| `templates/comment-insight-log.csv` | 评论/私信/社群问题转 FAQ、模板和选题 | 社媒运营、社群运营 |
 | `templates/experiment-log.csv` | 增长实验记录表 | 增长负责人 |
 | `templates/month-1-content-calendar.csv` | 首月 40 条跨平台排期 | 内容负责人、渠道运营 |
 | `templates/growth-funnel-dashboard.csv` | 增长漏斗数据表 | 数据、增长负责人 |

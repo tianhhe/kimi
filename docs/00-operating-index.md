@@ -73,6 +73,8 @@
 | `templates/creator-brief-template.md` | 达人合作 brief | 每次发达人邀约前复制 |
 | `templates/audience-segment-matrix-v2.csv` | P0/P1/P2 受众矩阵 | 投放、人群、渠道判断前对齐 |
 | `templates/competitor-tracker.csv` | 竞品动态追踪 | 每周五补充新观察 |
+| `templates/research-to-content-pipeline.csv` | 研究/竞品/语料洞察转内容流水线 | 每周一把研究信号改成栏目、选题和资产 |
+| `templates/comment-insight-log.csv` | 评论区、私信、社群提问转任务/FAQ/模板 | 每天记录高频问题和高意向任务 |
 | `templates/platform-column-scorecard.csv` | 平台栏目评分 | 每周复盘时判断保留、加码、下线 |
 | `templates/growth-funnel-dashboard.csv` | 内容到转化漏斗 | 每周复盘前更新核心数据 |
 | `templates/feature-usage-tracker.csv` | 功能使用率追踪 | GTM 后追踪功能激活、完成、复用 |
@@ -89,6 +91,8 @@
 | 新功能 GTM | `docs/05-gtm-checklist.md`、`docs/20-anthropic-site-content-system.md`、`docs/21-claude-site-content-system.md`、`docs/22-priority-sections-deep-read.md` | `templates/feature-usage-tracker.csv`、`templates/growth-funnel-dashboard.csv`、`templates/experiment-log.csv` | 功能叙事、站点资产、内容包、指标追踪 |
 | 达人投放 | `docs/04-creator-campaign-playbook.md`、`docs/23-kimi-audience-segmentation-v2.md` | `templates/audience-segment-matrix-v2.csv`、`templates/creator-roster.csv`、`templates/creator-brief-template.md` | 达人名单、合作 brief、验收标准 |
 | 竞品观察 | `docs/07-competitor-library-index.md`、`docs/09-competitor-deep-dive.md`、`docs/18-competitor-gtm-social-deep-dive.md` | `templates/competitor-tracker.csv` | 竞品变化、Kimi 回应选题、GTM 风险 |
+| 研究信号变选题 | `docs/22-priority-sections-deep-read.md`、`docs/24-claude-corpus-additional-insights.md`、`docs/25-competitor-social-media-playbook-v2.md` | `templates/research-to-content-pipeline.csv` | 把语料/竞品/研究洞察变成栏目、选题、模板和案例动作 |
+| 评论和私信承接 | `docs/19-platform-column-script-ops-manual.md`、`docs/27-kimi-social-growth-ops-v2.md` | `templates/comment-insight-log.csv`、`templates/content-brief-template.md` | 高频评论变 FAQ、模板、短视频和社群任务 |
 | 周复盘 | `docs/06-weekly-review-operating-rhythm.md`、`docs/16-growth-funnel-and-feature-usage.md` | `templates/weekly-review-template.md`、`templates/growth-funnel-dashboard.csv`、`templates/platform-column-scorecard.csv` | 下周加码/暂停/重写的决策 |
 | 月度规划 | `docs/01-growth-masterplan.md`、`docs/02-goals-budget-metrics.md`、`docs/15-growth-system-architecture.md`、`docs/23-kimi-audience-segmentation-v2.md` | `templates/month-1-content-calendar.csv` 或 `templates/month-2-content-calendar.csv`、`templates/experiment-log.csv` | 月度主线、预算、人群、内容战役 |
 
@@ -101,6 +105,7 @@
 3. 周二到周四：从 `docs/13-kimi-topic-bank-80.md`、`docs/14-first-batch-content-scripts.md`、`docs/19-platform-column-script-ops-manual.md` 取选题和脚本骨架，逐条写进 `templates/content-brief-template.md`。
 4. 周三和周五：更新 `templates/creator-roster.csv`，对照 `docs/04-creator-campaign-playbook.md` 发达人 brief。
 5. 周五：更新 `templates/growth-funnel-dashboard.csv`、`templates/platform-column-scorecard.csv`、`templates/competitor-tracker.csv`，只做三类决策：加码、重写、暂停。
+6. 周内随手把评论区、私信和社群里的高频任务记进 `templates/comment-insight-log.csv`，不要只留在聊天记录里。
 
 ### 每月怎么用
 
@@ -133,6 +138,7 @@
 3. 所有数据先进入 `templates/growth-funnel-dashboard.csv` 和 `templates/feature-usage-tracker.csv`。
 4. 栏目层面用 `templates/platform-column-scorecard.csv` 判断是否保留。
 5. 实验层面用 `templates/experiment-log.csv` 判断继续测、放大、停止或重写假设。
+6. 研究层面用 `templates/research-to-content-pipeline.csv` 看哪些洞察已经变内容，评论层面用 `templates/comment-insight-log.csv` 看哪些问题还没有被资产化。
 
 ## 4. 角色分工
 

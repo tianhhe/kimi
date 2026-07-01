@@ -1,0 +1,7 @@
+item_id,source_type,source_file_or_url,source_signal,priority_audience,task_type,content_angle,platform,content_column,landing_asset,template_asset,case_asset,owner,status,next_action
+RTC-001,official-research,docs/24-claude-corpus-additional-insights.md,AI Fluency should be long-term education line,P0产品/PMM/增长+P1新用户,education,不要教 prompt 先教任务委派,知乎/公众号/B站,Agent Fluency,Kimi Agent 方法论页,任务 brief 模板,用户委派案例,内容策略,idea,拆成 3 条知乎问答和 1 条 B 站课
+RTC-002,official-product,docs/21-claude-site-content-system.md,Cowork sells finished work not chat,P0销售/咨询/老板,reporting,从资料到交付物而不是 AI 聊天,抖音/小红书/视频号,60 秒交付演示,Kimi Work 功能页,客户行动包,销售交付案例,内容负责人,idea,做 5 条 before/after 演示
+RTC-003,official-resources,docs/22-priority-sections-deep-read.md,Use cases are filterable inspiration library,P0/P1全人群,content-system,把官网任务库做成社媒栏目库,公众号/小红书,任务卡模板库,Kimi 任务库页,岗位模板库,模板首用案例,PMM,idea,补 20 个中文 use cases
+RTC-004,competitor-social,docs/25-competitor-social-media-playbook-v2.md,Non-code workflows are the clearest market gap,P0产品/销售/咨询,non-code-workflows,报告/表格/PPT/研究四大非代码场景,B站/知乎/公众号,某某岗位怎么用 Kimi,Kimi for 非代码工作,非代码任务包,高付费岗位案例,增长负责人,idea,排 4 周专题
+RTC-005,customer-story,docs/24-claude-corpus-additional-insights.md,Customer stories should be searchable by role and result,P0团队负责人+达人,proof,把用户故事做成角色和结果双标签,小红书/B站/公众号,用户交付物改造,案例库首页,案例复盘模板,用户案例月榜,社群运营,idea,设计案例命名规则
+RTC-006,anthropic-research,docs/22-priority-sections-deep-read.md,Research can become trust content,P0受监管行业+团队负责人,trust,高风险任务为什么更需要人审和验收,知乎/公众号/B站,Kimi 安心用,Kimi 信任中心,验收清单,高风险任务案例,PMM,idea,先写 1 篇长文和 3 条短内容
