@@ -5,6 +5,8 @@
 /opencli-extension-*.zip
 /node_modules/
 /sources/raw/
+/sources/text/claude_com__*.txt
+/sources/text/www_claude_com__*.txt
 *.log
 Thumbs.db
 .DS_Store

@@ -1,0 +1,19 @@
+priority,segment,company_size,department,industry,core_task,paid_trigger,kimi_feature,primary_platform,content_column,landing_asset,template_asset,success_metric
+P0,小团队老板/创始人,小团队/初创,管理/经营,软件/服务/电商,经营周报/投资人 update/客户跟进/招聘计划,时间贵+一人多岗+收入影响,Kimi Work+Agent+Docs+Sheets,公众号/B站/视频号,高付费人群案例库,Kimi for 小团队,小团队经营周报包,高价值任务完成+D7复用+团队咨询
+P0,产品/PMM/增长负责人,团队/企业,产品/市场/增长,软件/互联网/AI,竞品分析/GTM/用户反馈聚类/路线图证据,决策质量+减少返工+版本节点,Kimi Work+Deep Research+Docs+Sheets,小红书/知乎/公众号,某某岗位怎么用 Kimi,Kimi for 产品增长,产品证据表+GTM brief,模板领取+功能激活+私信咨询
+P0,销售/BD/CS 管理者,团队/企业,销售/客户成功,B2B/企业服务,客户研究/拜访提纲/续费复盘/异议处理,收入影响+紧急节点,Kimi Work+Deep Research+Slides+Scheduled Tasks,抖音/视频号/公众号,高付费场景卡,Kimi for 销售CS,客户拜访与续费包,线索数+销售场景任务完成
+P0,咨询/投研/战略,个人/团队/企业,咨询/研究/战略,咨询/金融/产业研究,行业研究/公司对比/访谈提纲/memo/deck,时间贵+交付标准高,Kimi Agent+Deep Research+Docs+Slides,B站/知乎/公众号,高付费岗位工作流,Kimi for 咨询投研,行业预诊断模板,长任务完成+付费咨询
+P0,内容/品牌/代理商,个人/团队,内容/品牌/市场,媒体/营销/代理商,选题/脚本/素材审计/campaign brief/账号复盘,交付频率高+客户交付,Kimi Work+Docs+Sheets+Slides,小红书/B站/公众号,用户交付物改造,Kimi for 内容品牌,30天栏目和脚本包,收藏+模板复用+达人二创
+P0,财务/法务/HR/运营支持,团队/企业,财务/法务/HR/运营,通用企业,合同摘要/制度FAQ/预算复盘/入职计划/SOP,风险降低+内部复用,Kimi Work+Docs+Sheets,公众号/知乎/社群,Kimi 安心用,Kimi for 内部运营,内部运营SOP包,团队模板保存+复用
+P0,受监管行业专业人群,企业/受监管组织,金融/医疗/法律/安全,金融/医疗/法律/生命科学,尽调/合规/文献摘要/风险审查/研究记录,风险高+合规+人审,Kimi Work+Deep Research+Docs,知乎/公众号/B站,高风险任务验收,Kimi for 受监管行业,合规验收清单,高意向线索+验收清单下载
+P0,团队推广者/管理员,企业部门,管理/IT/数字化,通用企业,团队模板库/权限规范/采用培训/ROI复盘,团队复用+管理可控,Kimi Work+Agent+Templates,公众号/社群/直播,团队采用案例,Kimi for 团队,团队采用打卡表,团队咨询+多人任务完成
+P1,研究生/科研助理,个人/实验室,教育/研究,高校/科研,文献综述/开题/答辩/访谈资料,节点压力+资料复杂,Kimi Work+Deep Research+Docs,B站/小红书/知乎,研究生怎么用 Kimi,Kimi for 研究生,文献综述包,模板领取+论文场景复用
+P1,求职/转岗人群,个人,职业发展,通用,JD解析/简历/面试/作品集,节点压力+结果可验证,Kimi Docs+Deep Research,小红书/知乎/B站,求职任务卡,Kimi for 求职,岗位定制简历包,简历模板领取+完成率
+P1,创作者/自媒体,个人/团队,内容,媒体/自媒体,选题/脚本/账号复盘/矩阵分发,高频输出+涨粉焦虑,Kimi Work+Docs+Sheets,小红书/抖音/B站,创作者工作流,Kimi for 创作者,选题脚本库,收藏+二创+脚本完成
+P1,教师/培训师/教育工作者,个人/机构,教育/培训,教育,课程设计/作业反馈/学习路径,课程交付+责任边界,Kimi Docs+Slides,公众号/B站/小红书,Kimi 教育工作流,Kimi for 教育,课程设计包,课程模板领取
+P1,自由职业者/服务商,个人/小团队,服务交付,咨询/设计/营销/本地服务,报价/提案/客户研究/交付复盘,成交影响+客户交付,Kimi Work+Sheets+Slides,小红书/公众号/视频号,自由职业高付费场景,Kimi for 自由职业,报价依据表,报价模板使用+私信咨询
+P1,开发者/数据/自动化用户,个人/团队,研发/数据,软件/数据,脚本/数据处理/agent编排/产品雏形,效率+技术探索,Kimi Agent+Sheets+Websites,B站/知乎/即刻,Kimi Agent 项目课,Kimi for 自动化,Agent 工作流包,Agent 激活+D7复用
+P2,泛办公白领,个人/团队,行政/通用办公,通用,周报/会议纪要/邮件/报告,省时间但付费分化,Kimi Docs+Templates,小红书/抖音,办公模板库,Kimi Work 入门,周报会议纪要包,收藏+首用
+P2,普通学生,个人,学习,教育,资料总结/学习计划/考试整理,预算低+节点明确,Kimi Docs+Deep Research,小红书/B站,学习任务卡,Kimi for 学习,考试资料整理包,模板领取
+P2,个人生活用户,个人,个人生活,生活消费,旅行/购物/规划,传播强但业务价值弱,Kimi Chat+Docs,小红书/抖音,生活轻任务,Kimi 个人任务,生活规划模板,曝光+收藏
+P2,AI 尝鲜用户,个人,AI兴趣,通用,新功能体验/对比实验,追热点但留存弱,Kimi Agent+Work,即刻/微博/B站,新功能实验室,Kimi 新功能页,功能体验清单,评论+短期激活

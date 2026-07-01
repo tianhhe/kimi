@@ -12,7 +12,8 @@
 4. 每周三和周五：按 `docs/04-creator-campaign-playbook.md` 筛达人、发 brief、回收报价与脚本。
 5. 每次产品发布、功能更新或节点活动前：跑一遍 `docs/05-gtm-checklist.md`。
 6. 每周五：更新 `templates/competitor-tracker.csv`，把重要变化沉淀到 `docs/07-competitor-library-index.md`。
-7. 每次做新功能 GTM 前：先读 `docs/08-claude-anthropic-reading-notes.md`、`docs/09-competitor-deep-dive.md`、`docs/10-social-channel-title-swipe.md`，把功能包装成场景、任务和标题。
+7. 每次做新功能 GTM 前：先读 `docs/20-anthropic-site-content-system.md`、`docs/21-claude-site-content-system.md`、`docs/22-priority-sections-deep-read.md`，把功能放进 Research / Product / Solutions / Resources 四层资产里。
+8. 每次做人群、投放和达人规划前：先读 `docs/23-kimi-audience-segmentation-v2.md` 和 `templates/audience-segment-matrix-v2.csv`，按 P0/P1/P2 和任务价值来定预算。
 
 ## 文件地图
 
@@ -34,6 +35,13 @@
 | `docs/14-first-batch-content-scripts.md` | 首批 24 条可直接拍摄/改写的脚本 | 内容、达人、剪辑 |
 | `docs/15-growth-system-architecture.md` | 整体增长体系和文档体系总纲 | 增长负责人、团队负责人 |
 | `docs/16-growth-funnel-and-feature-usage.md` | 增长漏斗、功能使用率、复盘指标 | 增长、数据、PMM |
+| `docs/17-claude-content-system-playbook.md` | Claude/Anthropic 内容系统方法论和 Kimi 转译 | 增长负责人、内容策略 |
+| `docs/18-competitor-gtm-social-deep-dive.md` | Claude、Codex、Trae、Qoder、WorkBuddy 功能/GTM/社媒深拆 | 竞品研究、PMM |
+| `docs/19-platform-column-script-ops-manual.md` | 平台栏目、站点资产映射、第 2 月选题和脚本骨架 | 内容负责人、渠道运营 |
+| `docs/20-anthropic-site-content-system.md` | Anthropic 公司站全站阅读和内容资产分工 | 增长负责人、品牌/PR |
+| `docs/21-claude-site-content-system.md` | Claude 产品站全站阅读和转化资产拆解 | PMM、内容、产品 |
+| `docs/22-priority-sections-deep-read.md` | Anthropic Research 与 Claude Products/Solutions/Resources 精读 | 增长负责人、内容策略 |
+| `docs/23-kimi-audience-segmentation-v2.md` | Kimi 高付费受众 V2 分层和投放判断 | 增长负责人、投放、达人运营 |
 | `templates/content-brief-template.md` | 单条内容 brief 模板 | 内容负责人 |
 | `templates/creator-brief-template.md` | 达人合作 brief 模板 | 达人运营 |
 | `templates/weekly-review-template.md` | 周复盘填报模板 | 增长负责人 |
@@ -45,6 +53,9 @@
 | `templates/growth-funnel-dashboard.csv` | 增长漏斗数据表 | 数据、增长负责人 |
 | `templates/feature-usage-tracker.csv` | 功能使用率追踪表 | PMM、产品、数据 |
 | `templates/weekly-funnel-review-template.md` | 周复盘模板 | 增长负责人 |
+| `templates/month-2-content-calendar.csv` | 第 2 月 56 条内容排期，含站点资产承接 | 内容负责人 |
+| `templates/platform-column-scorecard.csv` | 平台栏目评分表，追踪栏目、人群、功能、资产、漏斗 | 增长负责人、渠道运营 |
+| `templates/audience-segment-matrix-v2.csv` | P0/P1/P2 受众矩阵，含任务、付费触发、平台和指标 | 投放、达人运营、内容策略 |
 
 ## 北极星指标
 
@@ -60,4 +71,4 @@
 
 ## 研究证据
 
-已把 Anthropic / Claude 官方网页、学习页、产品页、文档页下载到本地，详见 `sources/index/crawl-report.md`、`sources/index/official-pages.json`、`sources/text/`、`sources/raw/`。这些内容只作为策略证据，不把语料审计本身当成交付结果。
+已把 Anthropic 公司站、Claude 产品站、Claude/Anthropic 文档与学习页下载到本地并生成阅读地图。重点证据包括 `sources/index/anthropic-site-reading-map.csv`、`sources/index/claude-site-reading-map.csv`、`sources/index/full-corpus-reading-map.csv`。原始 HTML 和 Claude 产品站全量 text 语料保存在本地，不作为 GitHub 交付主体；策略文档、阅读地图、脚本和模板是可交付资产。
