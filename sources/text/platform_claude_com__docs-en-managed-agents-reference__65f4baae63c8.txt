@@ -1,0 +1,179 @@
+URL: https://platform.claude.com/docs/en/managed-agents/reference
+SOURCE_GROUP: claude-platform-docs
+TITLE: Reference
+
+Cookie settings
+We use cookies to deliver and improve our services, analyze site usage, and if you agree, to customize or personalize your experience and market our services to you. You can read our Cookie Policy here .
+Customize Customize Cookie Settings Reject Reject All Cookies Accept Accept All Cookies
+Claude Platform Docs
+Messages
+Managed Agents
+Admin
+Resources 
+ API reference
+English   Console Log in
+ 
+
+Search...
+⌘K
+First steps
+Overview Quickstart Prototype in Console
+Define your agent
+Agent setup Tools MCP connector Permission policies Agent Skills
+Configure agent environment
+Cloud environment setup Cloud sandbox reference Self-hosted sandboxes 
+Delegate work to your agent
+Start a session Session operations Session event stream Subscribe to webhooks Define outcomes Authenticate with vaults
+Manage agent context
+Access GitHub Attach and download files Build persistent memory 
+Advanced orchestration
+Multi-agent sessions Scheduled deployments
+Reference
+Managed Agents reference
+Working with files
+Files API PDF support Images and vision 
+Skills
+Overview Best practices Skills for enterprise
+MCP
+Remote MCP servers MCP tunnels 
+Claude on cloud platforms
+Claude Platform on AWS
+ Log in
+ Managed Agents  Managed Agents reference
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Claude Platform Docs
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Financial services
+Government
+Life sciences
+Partners
+Claude on AWS
+Claude on Google Cloud
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Company
+Anthropic
+Careers
+Economic Futures
+Research
+News
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Help and security
+Availability
+Status
+Support
+Discord
+Terms and policies
+Privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+Managed Agents / Reference
+Reference
+Copy page
+
+Event types, self-hosted worker CLI flags, supported MCP server types, rate limits, and branding guidelines for Claude Managed Agents.
+Copy page
+
+This page collects reference material for Claude Managed Agents. For task-oriented guides, follow the links in each section. For the operations on the session resource, see Session operations .
+
+All Managed Agents API requests require the managed-agents-2026-04-01 beta header. The SDK sets the beta header automatically.
+
+Event types
+Persisted event type strings follow a {domain}.{action} naming convention; the stream-only event deltas (see the Event deltas tab) are the exception. See Session event stream for sending, streaming, and listing events.
+User events
+User events
+Agent events
+Agent events
+Session events
+Session events
+Span events
+Span events
+System events
+System events
+Event deltas
+Event deltas
+
+Self-hosted worker
+These are the ant beta:worker CLI flags for the pre-built worker that drives a self_hosted environment. See Self-hosted sandboxes for setting up the environment, running a worker, and the SDK helper options.
+Flag Description
+--environment-id The environment to poll for work. Also reads from ANTHROPIC_ENVIRONMENT_ID .
+--environment-key Authenticates the worker with this environment. Also reads from ANTHROPIC_ENVIRONMENT_KEY .
+--workdir Directory where skills are downloaded and tools read and write files. Defaults to . (the current directory); the system default working directory is /workspace .
+--on-work Script to call for each claimed work item instead of running tools in-process. Receives session details as environment variables.
+--unrestricted-paths Allow tool calls to access paths outside --workdir .
+--max-idle How long to wait after the session goes idle with an end_turn stop reason before shutting down. Defaults to 60s .
+--log-format Log output format. Use json for structured log ingestion. Defaults to text .
+
+Supported MCP server types
+Claude Managed Agents connects to remote MCP servers that expose an HTTP endpoint, or to private MCP servers through MCP tunnels . The server must support the MCP protocol's streamable HTTP transport. See MCP connector for declaring servers on an agent.
+For more information on MCP and building MCP servers, see the MCP documentation .
+
+Rate limits
+Managed Agents endpoints are rate-limited per organization:
+Operation Limit
+Create endpoints (such as agents, sessions, and environments) 300 requests per minute
+Read endpoints (such as retrieve, list, and stream) 1,200 requests per minute
+Organization-level spend limits and usage-tier rate limits also apply.
+
+Branding guidelines
+For partners integrating Claude Managed Agents, use of Claude branding is optional. When referencing Claude in your product:
+Allowed:
+"Claude Agent" (preferred for dropdown menus)
+"Claude" (when within a menu already labeled "Agents")
+"{YourAgentName} Powered by Claude" (if you have an existing agent name)
+Not permitted:
+"Claude Code" or "Claude Code Agent"
+"Claude Cowork" or "Claude Cowork Agent"
+Claude Code-branded ASCII art or visual elements that mimic Claude Code
+Your product should maintain its own branding and not appear to be Claude Code, Claude Cowork, or any other Anthropic product. For questions about branding compliance, contact the Anthropic sales team .
+Was this page helpful?
+ 
+Event types
+Self-hosted worker
+Supported MCP server types
+Rate limits
+Branding guidelines

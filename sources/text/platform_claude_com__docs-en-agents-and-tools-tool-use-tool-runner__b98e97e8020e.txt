@@ -1,0 +1,282 @@
+URL: https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-runner
+SOURCE_GROUP: claude-platform-docs
+TITLE: Tool Runner (SDK)
+
+Cookie settings
+We use cookies to deliver and improve our services, analyze site usage, and if you agree, to customize or personalize your experience and market our services to you. You can read our Cookie Policy here .
+Customize Customize Cookie Settings Reject Reject All Cookies Accept Accept All Cookies
+Claude Platform Docs
+Messages
+Managed Agents
+Admin
+Resources 
+ API reference
+English   Console Log in
+ 
+
+Search...
+⌘K
+First steps
+Intro to Claude Quickstart
+Building with Claude
+Features overview Using the Messages API Stop reasons and fallback Refusals and fallback Fallback credit
+Model capabilities
+Extended thinking Adaptive thinking Effort Task budgets (beta) Fast mode (research preview) Structured outputs Citations Streaming Messages Batch processing Search results Streaming refusals Multilingual support Embeddings
+Tools
+Overview How tool use works Tutorial: Build a tool-using agent Define tools Handle tool calls Parallel tool use Tool Runner (SDK) Strict tool use Server tools Web search tool Web fetch tool Code execution tool Advisor tool Tool search tool Memory tool Bash tool Text editor tool Computer use tool Troubleshooting
+Tool infrastructure
+Tool reference Manage tool context Tool combinations Tool use with prompt caching Programmatic tool calling Fine-grained tool streaming
+Context management
+Context windows Compaction Context editing Prompt caching Mid-conversation system messages Build an orchestration mode Cache diagnostics (beta) Token counting
+Working with files
+Files API PDF support Images and vision 
+Skills
+Overview Quickstart Best practices Skills for enterprise Skills in the API
+MCP
+Remote MCP servers MCP connector MCP tunnels 
+Claude on cloud platforms
+Amazon Bedrock Amazon Bedrock (legacy) Claude Platform on AWS Google Cloud Microsoft Foundry
+ Log in
+ Messages  Tool Runner (SDK)
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Claude Platform Docs
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Financial services
+Government
+Life sciences
+Partners
+Claude on AWS
+Claude on Google Cloud
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Company
+Anthropic
+Careers
+Economic Futures
+Research
+News
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Help and security
+Availability
+Status
+Support
+Discord
+Terms and policies
+Privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+Messages / Tools
+Tool Runner (SDK)
+Copy page
+
+Use the SDK's tool runner to handle the agentic loop, error wrapping, and type safety automatically.
+Copy page
+
+The tool runner handles the agentic loop, error wrapping, and type safety so you don't have to. When you need human-in-the-loop approval, custom logging, or conditional execution, use the manual loop instead.
+Instead of manually handling tool calls, tool results, and conversation management, the tool runner automatically:
+Runs tools when Claude calls them
+Handles the request/response cycle
+Manages conversation state
+Provides type safety and validation
+
+The tool runner is in beta and available in the Python SDK , TypeScript SDK , C# SDK , Go SDK , Java SDK , PHP SDK , and Ruby SDK .
+
+Basic usage
+Define tools using the SDK helpers, then use the tool runner to run them.
+Depending on the SDK's tool signature, a tool returns its result as a string or as content blocks (text, image, or document blocks), so a tool can return multimodal results. A returned string becomes a single text content block. To return structured data, such as a JSON object or a number, encode it as a string first.
+Python
+Python
+TypeScript
+TypeScript
+C#
+C#
+Go
+Go
+Java
+Java
+PHP
+PHP
+Ruby
+Ruby
+
+Iterating over the tool runner
+The tool runner is an iterable that yields messages from Claude. On each iteration, the runner checks whether Claude requested a tool use. If so, it runs the tool and sends the result back to Claude automatically, then yields the next message from Claude to continue your loop.
+You can end the loop at any iteration with a break statement. The runner loops until Claude returns a message without a tool use, or until it reaches max_iterations if you set it.
+If you don't need intermediate messages, you can get the final message directly:
+Python
+Python
+TypeScript
+TypeScript
+C#
+C#
+Go
+Go
+Java
+Java
+PHP
+PHP
+Ruby
+Ruby
+
+Advanced usage
+Within the loop, you can read each response message and modify the runner's state before the next API call. Each iteration follows this lifecycle:
+The runner sends a request to the Messages API with its current state.
+The runner yields the response message to your loop body.
+Your loop body runs. You can read the message and optionally modify the runner's state.
+When your loop body returns, the runner checks whether you modified its message history.
+If you did not modify message history: The runner appends the assistant message to its state. If the message contains tool calls, the runner runs them and appends the results. If there are no tool calls, the loop exits.
+If you modified message history: The runner skips its automatic append and uses your state unchanged. See Taking over message history .
+
+Taking over message history
+By default, the runner manages conversation state for you: after each turn, it appends the assistant message and any tool results to its own message history. You take over message history when you want to retry a turn (discard the response and resend), inject a follow-up message, or build the tool result yourself.
+You take over by modifying the runner's messages from inside the loop body. The exact method depends on the SDK. See the per-language tabs that follow.
+When you take over for an iteration, the runner does not append the assistant message or tool results from that turn. You become responsible for keeping the conversation valid: append the assistant message and a tool result yourself (if you want the turn to count), modify state conditionally so the loop can still exit when there are no tool calls, and pass max_iterations to bound the loop. All seven SDKs support max_iterations .
+Python
+Python
+TypeScript
+TypeScript
+C#
+C#
+Go
+Go
+Java
+Java
+PHP
+PHP
+Ruby
+Ruby
+
+Automatic context management
+For long-running agentic tasks, the Python, TypeScript, and Ruby tool runners support automatic compaction , which generates summaries when token usage exceeds a threshold so the conversation can continue beyond context window limits. All three SDKs have deprecated this client-side option in favor of server-side context editing , which is available in every SDK. The Go, Java, C#, and PHP tool runners don't include client-side compaction.
+
+Debugging tool execution
+When a tool throws an exception, the tool runner catches it and returns the error to Claude as a tool result with is_error: true . The tool result carries the exception's message (in Python, its type and message), not the full stack trace.
+What the SDK logs is language-specific. The Python SDK logs the full exception, including its stack trace, through the standard logging module whenever a tool raises an unhandled exception. The Python, TypeScript, and Java SDKs read the ANTHROPIC_LOG environment variable to turn on the SDK's logging, which includes request and response detail:
+# Log at info level
+export ANTHROPIC_LOG = info
+# Log at debug level for more verbose output
+export ANTHROPIC_LOG = debug
+
+The Go, Ruby, C#, and PHP SDKs don't read ANTHROPIC_LOG . Outside Python, no SDK logs a failed tool: to see why a tool failed, catch and log the exception inside the tool function before returning or rethrowing it.
+
+Intercepting tool errors
+By default, tool errors are passed back to Claude, which can then respond appropriately. However, you might want to detect errors and handle them differently, for example, to stop execution early or implement custom error handling.
+In the Python and TypeScript SDKs, use the tool response method ( generate_tool_call_response() in Python, generateToolResponse() in TypeScript) to intercept tool results and check for errors before they're sent to Claude. The other SDKs don't expose that hook. Their tabs describe the closest alternative:
+Python
+Python
+TypeScript
+TypeScript
+C#
+C#
+Go
+Go
+Java
+Java
+PHP
+PHP
+Ruby
+Ruby
+
+Modifying tool results
+You can modify tool results before they're sent back to Claude. This is useful for adding metadata such as cache_control to enable prompt caching on tool results, or for transforming the tool output.
+In the Python and TypeScript SDKs, use the tool response method to get the tool result, then modify it before the runner proceeds. Whether you explicitly append the modified result or mutate it in place depends on the SDK. See the code comments in each tab.
+Python
+Python
+TypeScript
+TypeScript
+C#
+C#
+Go
+Go
+Java
+Java
+PHP
+PHP
+Ruby
+Ruby
+
+Adding cache_control to tool results is particularly useful when tools return large amounts of data (such as document search results) that you want to cache for subsequent API calls. See Prompt caching for more details on caching strategies.
+
+Streaming
+Enable streaming to process each turn's response incrementally. Each iteration yields a stream object that you can iterate for events.
+Python
+Python
+TypeScript
+TypeScript
+C#
+C#
+Go
+Go
+Java
+Java
+PHP
+PHP
+Ruby
+Ruby
+
+Next steps
+
+Strict tool use
+Enforce JSON Schema compliance on Claude's tool inputs with grammar-constrained sampling.
+Handle tool calls
+Parse tool_use blocks, format tool_result responses, and handle errors with is_error .
+Parallel tool use
+Enable and format parallel tool calls, with message-history guidance and troubleshooting.
+Define tools
+Specify tool schemas, write effective descriptions, and control when Claude calls your tools.
+Was this page helpful?
+ 
+Basic usage
+Iterating over the tool runner
+Advanced usage
+Taking over message history
+Automatic context management
+Debugging tool execution
+Intercepting tool errors
+Modifying tool results
+Streaming
+Next steps

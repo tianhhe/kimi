@@ -1,0 +1,186 @@
+URL: https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/quickstart
+SOURCE_GROUP: claude-platform-docs
+TITLE: MCP tunnels quickstart
+
+Cookie settings
+We use cookies to deliver and improve our services, analyze site usage, and if you agree, to customize or personalize your experience and market our services to you. You can read our Cookie Policy here .
+Customize Customize Cookie Settings Reject Reject All Cookies Accept Accept All Cookies
+Claude Platform Docs
+Messages
+Managed Agents
+Admin
+Resources 
+ API reference
+English   Console Log in
+ 
+
+Search...
+⌘K
+First steps
+Intro to Claude Quickstart
+Building with Claude
+Features overview Using the Messages API Stop reasons and fallback Refusals and fallback Fallback credit
+Model capabilities
+Extended thinking Adaptive thinking Effort Task budgets (beta) Fast mode (research preview) Structured outputs Citations Streaming Messages Batch processing Search results Streaming refusals Multilingual support Embeddings
+Tools
+Overview How tool use works Tutorial: Build a tool-using agent Define tools Handle tool calls Parallel tool use Tool Runner (SDK) Strict tool use Server tools Web search tool Web fetch tool Code execution tool Advisor tool Tool search tool Memory tool Bash tool Text editor tool Computer use tool Troubleshooting
+Tool infrastructure
+Tool reference Manage tool context Tool combinations Tool use with prompt caching Programmatic tool calling Fine-grained tool streaming
+Context management
+Context windows Compaction Context editing Prompt caching Mid-conversation system messages Build an orchestration mode Cache diagnostics (beta) Token counting
+Working with files
+Files API PDF support Images and vision 
+Skills
+Overview Quickstart Best practices Skills for enterprise Skills in the API
+MCP
+Remote MCP servers MCP connector MCP tunnels  Overview Architecture and components Quickstart Manage in the Console Deploy with Helm Deploy with Docker Compose Security Troubleshooting Reference
+Claude on cloud platforms
+Amazon Bedrock Amazon Bedrock (legacy) Claude Platform on AWS Google Cloud Microsoft Foundry
+ Log in
+ Messages  Quickstart
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Claude Platform Docs
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Financial services
+Government
+Life sciences
+Partners
+Claude on AWS
+Claude on Google Cloud
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Company
+Anthropic
+Careers
+Economic Futures
+Research
+News
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Help and security
+Availability
+Status
+Support
+Discord
+Terms and policies
+Privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+Messages / MCP tunnels
+MCP tunnels quickstart
+Copy page
+
+Connect Claude to a private MCP server using a local Docker Compose deployment.
+Copy page
+
+
+MCP tunnels are in research preview. Request access to try them.
+This quickstart takes you from zero to Claude calling a private MCP server through a tunnel. It uses Docker Compose with manual credential provisioning, which is the shortest path for local testing. For production deployments, see Deploy with Helm or Deploy with Docker Compose .
+
+What you'll build
+A two-container tunnel stack (the proxy and cloudflared ) plus a sample MCP server running alongside it. When everything is running, the sample server is reachable from Claude at https://echo.<your-tunnel-domain>/mcp even though nothing is listening on a public port.
+
+What you need
+Docker and Docker Compose on a machine with outbound internet access.
+A role in the Claude Console that can manage MCP tunnels. See the Console guide prerequisites .
+OpenSSL 1.1.1 or later. Preinstalled on macOS and most Linux distributions; on Windows, install it separately (the openssl binary must be on your PATH ).
+1
+Create a tunnel
+In the Claude Console sidebar, go to Manage > MCP tunnels and click New tunnel . Give it a name. Leave Set up programmatic access off; this quickstart uses manual credential provisioning.
+After it's created, open the tunnel. Copy two values from the Connection section:
+Domain (looks like abcd1234.tunnel.anthropic.com )
+Token (click the eye icon, then copy)
+2
+Set up the deployment directory
+macOS / Linux
+macOS / Linux
+Windows (PowerShell)
+Windows (PowerShell)
+3
+Generate a CA and server certificate
+The proxy terminates inner TLS using a certificate signed by a CA you control. Generate both:
+macOS / Linux
+macOS / Linux
+Windows (PowerShell)
+Windows (PowerShell)
+Back in the Console, on the tunnel detail page, click Add certificate and upload data/ca.crt (or paste its contents). The tunnel status flips to Active .
+4
+Write the sample MCP server
+macOS / Linux
+macOS / Linux
+Windows (PowerShell)
+Windows (PowerShell)
+5
+Write the proxy config and compose file
+macOS / Linux
+macOS / Linux
+Windows (PowerShell)
+Windows (PowerShell)
+6
+Start it
+macOS / Linux
+macOS / Linux
+Windows (PowerShell)
+Windows (PowerShell)
+You should see one route configured line for echo and four Registered tunnel connection lines. The containers take a few seconds to start; rerun the log commands if they come back empty.
+7
+Call it from Claude
+In the Console, go to Managed Agents > Sessions and create a session. In the agent picker choose Create new agent , give the agent a name, and keep the pre-filled model. Click + MCP Server , select your tunnel, set Subdomain to echo and Path to mcp . Then ask:
+Use the hello tool to greet tunnel.
+You should see a tool call followed by its result.
+
+Next steps
+The tunnel is verified end to end. To swap in your own MCP server, add it to docker-compose.yaml (or run it on the same Docker network), add a route for it in config/mcp-proxy.yaml , then restart the proxy ( docker compose restart mcp-proxy ).
+For production deployments:
+Deploy with Docker Compose
+Hardened single-host deployment, with or without programmatic access.
+Deploy with Helm
+Kubernetes deployment with automatic credential management.
+Was this page helpful?
+ 
+What you'll build
+What you need
+Next steps

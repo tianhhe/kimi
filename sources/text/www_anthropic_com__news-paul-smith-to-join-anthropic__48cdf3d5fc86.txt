@@ -1,0 +1,119 @@
+URL: https://www.anthropic.com/news/paul-smith-to-join-anthropic
+SOURCE_GROUP: anthropic-com-sitemap
+TITLE: Paul Smith to join Anthropic as Chief Commercial Officer
+
+Skip to main content Skip to footer
+Research
+Policy
+Commitments
+Learn
+News
+Try Claude
+Announcements
+Paul Smith to join Anthropic as Chief Commercial Officer
+Jul 15, 2025
+Anthropic will appoint Paul Smith as its first Chief Commercial Officer, who will assume the role later this year. Paul will bring over 30 years of experience building and scaling global go-to-market organizations at some of the world's most successful enterprise technology companies, including Microsoft, Salesforce, and ServiceNow.
+Confirmation of Paul's appointment comes at a moment of exceptional growth for Anthropic, particularly in the enterprise market. We now serve hundreds of thousands of active API customers, while Claude Code has seen its recurring revenue grow over 5x in just two months. From the fastest growing startups to the Fortune 500, businesses across every industry are deploying Claude to transform their operations.
+“Anthropic has taken a deliberate approach from the beginning—focusing our efforts on AI systems that businesses can trust and deploy at scale,” said Daniela Amodei, President of Anthropic. “Paul's experience building go-to-market powerhouses at Microsoft, Salesforce, and ServiceNow will strengthen our commercial organization and help more businesses worldwide become AI-native when he starts later this year.”
+"Anthropic's growth is unprecedented, and yet most enterprises are still in the early stages of AI adoption. The potential ahead is massive,” said Paul. “Throughout my career, I've been fortunate to build teams that have guided companies through transformative technology shifts. And I could not be more excited by the opportunity to help customers navigate AI—the biggest shift of all—with Anthropic.”
+AI is fundamentally restructuring how businesses create and capture value. Paul's expertise will help us support more organizations in navigating this transition thoughtfully, as we work to become the most trusted AI partner for businesses.
+Related content
+Introducing Claude Sonnet 5
+Sonnet 5 delivers frontier performance across coding, agents, and professional work at scale.
+Read more
+Redeploying Fable 5
+Fable 5 returns globally July 1. We're also proposing an industry-wide framework for scoring jailbreak severity, together with Amazon, Microsoft, Google, and other Glasswing partners.
+Read more
+Claude Science, an AI workbench for scientists, is now available
+Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources.
+Read more
+Products
+Claude
+Claude Code
+Claude Code Enterprise
+Claude Cowork
+@Claude
+Claude Design
+Claude Science
+Claude Security
+Claude for Chrome
+Claude for Microsoft 365
+Skills
+Download app
+Pricing
+Log in to Claude
+Models
+Mythos
+Fable
+Opus
+Sonnet
+Haiku
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Enterprise
+Financial services
+Government
+Healthcare
+Legal
+Life sciences
+Nonprofits
+Security
+Small business
+Startups
+Claude Platform
+Overview
+Developer docs
+Pricing
+Ecosystem
+Marketplace
+Regional compliance
+Claude on AWS
+Google Cloud
+Microsoft Foundry
+Console login
+Resources
+Blog
+Claude partner network
+Community
+Connectors
+Courses
+Customer stories
+Engineering at Anthropic
+Events
+Inside Claude Code
+Inside Claude Cowork
+Inside Claude Enterprise
+Plugins
+Powered by Claude
+Service partners
+Tutorials
+Use cases
+Help and security
+Availability
+Status
+Support center
+Company
+Anthropic
+Careers
+Policy
+Economic Futures
+Research
+News
+Claude’s Constitution
+Claude Corps
+Policy on the AI Exponential
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Terms and policies
+Privacy policy
+Consumer health data privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+© 2026 Anthropic PBC

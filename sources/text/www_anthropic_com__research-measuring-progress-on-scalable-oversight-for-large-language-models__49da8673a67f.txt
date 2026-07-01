@@ -1,0 +1,117 @@
+URL: https://www.anthropic.com/research/measuring-progress-on-scalable-oversight-for-large-language-models
+SOURCE_GROUP: anthropic-com-sitemap
+TITLE: Measuring Progress on Scalable Oversight for Large Language Models
+
+Skip to main content Skip to footer
+Research
+Policy
+Commitments
+Learn
+News
+Try Claude
+Alignment Research
+Measuring Progress on Scalable Oversight for Large Language Models
+Nov 4, 2022
+Read Paper
+Abstract
+Developing safe and useful general-purpose AI systems will require us to make progress on scalable oversight: the problem of supervising systems that potentially outperform us on most skills relevant to the task at hand. Empirical work on this problem is not straightforward, since we do not yet have systems that broadly exceed our abilities. This paper discusses one of the major ways we think about this problem, with a focus on ways it can be studied empirically. We first present an experimental design centered on tasks for which human specialists succeed but unaided humans and current general AI systems fail. We then present a proof-of-concept experiment meant to demonstrate a key feature of this experimental design and show its viability with two question-answering tasks: MMLU and time-limited QuALITY. On these tasks, we find that human participants who interact with an unreliable large-language-model dialog assistant through chat -- a trivial baseline strategy for scalable oversight -- substantially outperform both the model alone and their own unaided performance. These results are an encouraging sign that scalable oversight will be tractable to study with present models and bolster recent findings that large language models can productively assist humans with difficult tasks.
+Related content
+Anthropic Economic Index report: Cadences
+In our latest Economic Index report, we sample hourly for the first time to ask: When do people come to Claude? What do they produce with it? And how do they perceive AI's impact on their work?
+Read more
+Project Fetch: Phase two
+We report results from our latest test of whether Claude can help Anthropic employees perform sophisticated robotics tasks. We found that Claude Opus 4.7, operating without human assistance, was about 20 times faster than the fastest human team at all tasks completed by participants less than a year ago.
+Read more
+Agentic coding and persistent returns to expertise
+This report provides evidence on how Claude Code is used in practice, based on a privacy-preserving analysis of around 400,000 interactive sessions from around 235,000 people between October 2025 and April 2026.
+Read more
+Products
+Claude
+Claude Code
+Claude Code Enterprise
+Claude Cowork
+@Claude
+Claude Design
+Claude Science
+Claude Security
+Claude for Chrome
+Claude for Microsoft 365
+Skills
+Download app
+Pricing
+Log in to Claude
+Models
+Mythos
+Fable
+Opus
+Sonnet
+Haiku
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Enterprise
+Financial services
+Government
+Healthcare
+Legal
+Life sciences
+Nonprofits
+Security
+Small business
+Startups
+Claude Platform
+Overview
+Developer docs
+Pricing
+Ecosystem
+Marketplace
+Regional compliance
+Claude on AWS
+Google Cloud
+Microsoft Foundry
+Console login
+Resources
+Blog
+Claude partner network
+Community
+Connectors
+Courses
+Customer stories
+Engineering at Anthropic
+Events
+Inside Claude Code
+Inside Claude Cowork
+Inside Claude Enterprise
+Plugins
+Powered by Claude
+Service partners
+Tutorials
+Use cases
+Help and security
+Availability
+Status
+Support center
+Company
+Anthropic
+Careers
+Policy
+Economic Futures
+Research
+News
+Claude’s Constitution
+Claude Corps
+Policy on the AI Exponential
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Terms and policies
+Privacy policy
+Consumer health data privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+© 2026 Anthropic PBC

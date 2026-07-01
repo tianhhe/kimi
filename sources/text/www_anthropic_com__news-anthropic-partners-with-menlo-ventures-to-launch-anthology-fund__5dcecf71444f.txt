@@ -1,0 +1,121 @@
+URL: https://www.anthropic.com/news/anthropic-partners-with-menlo-ventures-to-launch-anthology-fund
+SOURCE_GROUP: anthropic-com-sitemap
+TITLE: Anthropic partners with Menlo Ventures to launch Anthology Fund
+
+Skip to main content Skip to footer
+Research
+Policy
+Commitments
+Learn
+News
+Try Claude
+Announcements
+Anthropic partners with Menlo Ventures to launch Anthology Fund
+Jul 17, 2024
+We’re launching the Anthology Fund in partnership with Menlo Ventures to accelerate the development of groundbreaking AI applications. The Fund is a $100 million initiative financed by Menlo to support startups innovating broadly with Anthropic technology.
+“Through our partnership with Menlo Ventures and the Anthology Fund, we hope to accelerate the development of groundbreaking AI applications. We're particularly interested in ventures that leverage AI to enhance human capabilities and productivity in fields such as healthcare, legal services, education, energy, infrastructure, and scientific research,” said Daniela Amodei, co-founder and President of Anthropic. “We look forward to working closely with Menlo and the exceptional founders backed by this Fund to push the boundaries of what’s possible with AI.”
+The Fund will back selected entrepreneurs primarily innovating in five key areas: AI infrastructure; novel applications of AI in industries like healthcare, education, scientific research, and more; consumer AI solutions; trust and safety tooling; and AI apps and technology that maximize societal benefits.
+Startups backed by the Anthology Fund will gain access to Anthropic products and research, $25,000 in free credits towards our most advanced models, and best-in-class venture support from Menlo, among other benefits and resources.
+“We are thrilled to join forces with Anthropic to launch the Anthology Fund,” said Matt Murphy, Partner at Menlo Ventures. “By combining Menlo’s company-building experience with Anthropic’s cutting-edge AI technology and talent, we are uniquely positioned to identify and partner with the most promising entrepreneurs shaping the future of AI.”
+We look forward to working with Menlo in supporting the startup ecosystem and driving responsible AI innovation.
+Interested startups can learn more and apply here .
+Related content
+Introducing Claude Sonnet 5
+Sonnet 5 delivers frontier performance across coding, agents, and professional work at scale.
+Read more
+Redeploying Fable 5
+Fable 5 returns globally July 1. We're also proposing an industry-wide framework for scoring jailbreak severity, together with Amazon, Microsoft, Google, and other Glasswing partners.
+Read more
+Claude Science, an AI workbench for scientists, is now available
+Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources.
+Read more
+Products
+Claude
+Claude Code
+Claude Code Enterprise
+Claude Cowork
+@Claude
+Claude Design
+Claude Science
+Claude Security
+Claude for Chrome
+Claude for Microsoft 365
+Skills
+Download app
+Pricing
+Log in to Claude
+Models
+Mythos
+Fable
+Opus
+Sonnet
+Haiku
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Enterprise
+Financial services
+Government
+Healthcare
+Legal
+Life sciences
+Nonprofits
+Security
+Small business
+Startups
+Claude Platform
+Overview
+Developer docs
+Pricing
+Ecosystem
+Marketplace
+Regional compliance
+Claude on AWS
+Google Cloud
+Microsoft Foundry
+Console login
+Resources
+Blog
+Claude partner network
+Community
+Connectors
+Courses
+Customer stories
+Engineering at Anthropic
+Events
+Inside Claude Code
+Inside Claude Cowork
+Inside Claude Enterprise
+Plugins
+Powered by Claude
+Service partners
+Tutorials
+Use cases
+Help and security
+Availability
+Status
+Support center
+Company
+Anthropic
+Careers
+Policy
+Economic Futures
+Research
+News
+Claude’s Constitution
+Claude Corps
+Policy on the AI Exponential
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Terms and policies
+Privacy policy
+Consumer health data privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+© 2026 Anthropic PBC

@@ -1,0 +1,135 @@
+URL: https://www.anthropic.com/news/higher-limits-spacex
+SOURCE_GROUP: anthropic-com-sitemap
+TITLE: Higher usage limits for Claude and a compute deal with SpaceX
+
+Skip to main content Skip to footer
+Research
+Policy
+Commitments
+Learn
+News
+Try Claude
+Announcements
+Higher usage limits for Claude and a compute deal with SpaceX
+May 6, 2026
+We’ve agreed to a partnership with SpaceX that will substantially increase our compute capacity. This, along with our other recent compute deals, means that we’ve been able to increase our usage limits for Claude Code and the Claude API.
+Below, we describe these changes and the progress we’re making on compute.
+Higher usage limits
+The following three changes—all effective today—are aimed at improving the experience of using Claude for our most dedicated customers.
+First, we’re doubling Claude Code’s five-hour rate limits for Pro, Max, Team, and seat-based Enterprise plans.
+Second, we’re removing the peak hours limit reduction on Claude Code for Pro and Max accounts.
+Third, we’re raising our API rate limits considerably for Claude Opus models , as shown in the table below:
+Our updated API rate limits for Claude Opus models.
+New compute partnership with SpaceX
+We’ve signed an agreement with SpaceX to use all of the compute capacity at their Colossus 1 data center. This gives us access to more than 300 megawatts of new capacity (over 220,000 NVIDIA GPUs) within the month. This additional capacity will directly improve capacity for Claude Pro and Claude Max subscribers.
+This joins our other significant compute announcements:
+An up to 5 gigawatt (GW) agreement with Amazon , which includes nearly 1 GW of new capacity by the end of 2026;
+A 5 GW agreement with Google and Broadcom, which will begin coming online in 2027;
+A strategic partnership with Microsoft and NVIDIA that includes $30 billion of Azure capacity;
+Our $50 billion investment in American AI infrastructure with Fluidstack.
+We train and run Claude on a range of AI hardware—AWS Trainium, Google TPUs, and NVIDIA GPUs—and continue to explore opportunities to bring additional capacity online.
+As part of this agreement, we have also expressed interest in partnering with SpaceX to develop multiple gigawatts of orbital AI compute capacity.
+Expanding internationally
+Our enterprise customers—particularly those in regulated industries like financial services, healthcare, and government—increasingly need in-region infrastructure to meet compliance and data residency requirements. Accordingly, some of our capacity expansion will be international: our recently announced collaboration with Amazon includes additional inference in Asia and Europe.
+We’re very intentional about where we’ll add capacity—partnering with democratic countries whose legal and regulatory frameworks support investments of this scale, and where the supply chain on which our compute depends—hardware, networking, and facilities—will be secure.
+Finally, we recently made a commitment to cover any consumer electricity price increases caused by our data centers in the US. As part of our international expansion, we’re exploring ways to extend that commitment to new jurisdictions, as well as partnering with local leaders to invest back into the communities that host our facilities.
+Related content
+Introducing Claude Sonnet 5
+Sonnet 5 delivers frontier performance across coding, agents, and professional work at scale.
+Read more
+Redeploying Fable 5
+Fable 5 returns globally July 1. We're also proposing an industry-wide framework for scoring jailbreak severity, together with Amazon, Microsoft, Google, and other Glasswing partners.
+Read more
+Claude Science, an AI workbench for scientists, is now available
+Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources.
+Read more
+Products
+Claude
+Claude Code
+Claude Code Enterprise
+Claude Cowork
+@Claude
+Claude Design
+Claude Science
+Claude Security
+Claude for Chrome
+Claude for Microsoft 365
+Skills
+Download app
+Pricing
+Log in to Claude
+Models
+Mythos
+Fable
+Opus
+Sonnet
+Haiku
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Enterprise
+Financial services
+Government
+Healthcare
+Legal
+Life sciences
+Nonprofits
+Security
+Small business
+Startups
+Claude Platform
+Overview
+Developer docs
+Pricing
+Ecosystem
+Marketplace
+Regional compliance
+Claude on AWS
+Google Cloud
+Microsoft Foundry
+Console login
+Resources
+Blog
+Claude partner network
+Community
+Connectors
+Courses
+Customer stories
+Engineering at Anthropic
+Events
+Inside Claude Code
+Inside Claude Cowork
+Inside Claude Enterprise
+Plugins
+Powered by Claude
+Service partners
+Tutorials
+Use cases
+Help and security
+Availability
+Status
+Support center
+Company
+Anthropic
+Careers
+Policy
+Economic Futures
+Research
+News
+Claude’s Constitution
+Claude Corps
+Policy on the AI Exponential
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Terms and policies
+Privacy policy
+Consumer health data privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+© 2026 Anthropic PBC

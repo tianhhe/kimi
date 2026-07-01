@@ -1,0 +1,132 @@
+URL: https://www.anthropic.com/news/updating-our-usage-policy
+SOURCE_GROUP: anthropic-com-sitemap
+TITLE: Updating our Usage Policy
+
+Skip to main content Skip to footer
+Research
+Policy
+Commitments
+Learn
+News
+Try Claude
+Announcements
+Updating our Usage Policy
+May 10, 2024
+Today, we're updating the policies that protect our users and ensure our products and services are used responsibly. Our goal with these updates is to clarify which applications of our products are and are not allowed so our policies are clear and easy for users to understand.
+Previously, we referred to this set of policies as our Acceptable Use Policy. We are now updating the name to Usage Policy. These changes will take effect on June 6, 2024.
+We consider a number of factors when updating these policies, including the practical applications of our models, an evolving landscape of laws and regulations, and the advancing capability of our models and tools for detecting and preventing potential misuse. Our Usage Policy plays a crucial role in how we execute our safety mission.
+In the following section, we will outline the significant updates to our Usage Policy.
+Streamlining our policies
+Previously, our Acceptable Use Policy was divided into two sections: "Prohibited Uses" and "Prohibited Business Cases." To provide more clarity and emphasize that certain rules apply to all users of our products—both businesses and consumers—we’ve consolidated these sections into a single set of guidelines called "Universal Usage Standards."
+Clarifying our policies on election integrity and misinformation
+We have consistently prohibited the use of our products for political lobbying and campaigning. Our updated policy provides clearer definitions of the activities that fall under each category. For instance, we explicitly state that our products cannot be used to promote or advocate for a specific candidate, party, issue, or position. We also prohibit the use of our products for political activities such as soliciting votes or financial contributions.
+Our revised policy also includes more precise language prohibiting the use of our products to interfere with the election process, such as targeting voting machines or obstructing the counting or certification of votes. To combat misinformation, we have added language banning the use of our products to generate or participate in campaigns that disseminate false or misleading information regarding election laws, candidate information, and other related topics.
+Adding requirements for high-risk use cases
+Our products can be used to provide information and perform analysis to help organizations make decisions. However, in some cases, these decisions may have significant consequences for individuals and require specialized expertise. We have defined these specific circumstances as high-risk use cases, which include integrations of our API that affect healthcare decisions and legal guidance. To address these concerns, we have updated our Usage Policy to require organizations to follow additional safety measures when using our products in high-risk use cases.
+Expanding who can use our products
+Our Consumer Terms of Service prohibit the use of our services by individuals under the age of 18. At the same time, there are certain use cases where AI tools can offer significant benefits to younger users, such as test preparation or tutoring support. With this in mind, our updated policy allows organizations to incorporate our API into their products for minors if they agree to implement certain safety features and disclose to their users that their product is leveraging an AI system. See our Help Center article to learn more.
+We have also expanded the number of countries whose law enforcement authorities may use our products for a carefully tailored set of use cases, such as call center support and document summarization.
+Clearer privacy protections
+Our Acceptable Use Policy has always prohibited gathering information on an individual or group in order to track, target, or report on their identity. We have now updated the policy to explicitly forbid the use of our products to analyze biometric data to infer characteristics like race or religious beliefs. We’ve also added language prohibiting use of our models to build recognition systems or techniques to infer people's emotions for use cases like interrogation.
+In addition, our updated policy makes clear that our products cannot be used to analyze or identify specific content to censor on behalf of a government organization. This applies to all countries where our products are permitted for use.
+You can view our updated policy in full here .
+Related content
+Introducing Claude Sonnet 5
+Sonnet 5 delivers frontier performance across coding, agents, and professional work at scale.
+Read more
+Redeploying Fable 5
+Fable 5 returns globally July 1. We're also proposing an industry-wide framework for scoring jailbreak severity, together with Amazon, Microsoft, Google, and other Glasswing partners.
+Read more
+Claude Science, an AI workbench for scientists, is now available
+Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources.
+Read more
+Products
+Claude
+Claude Code
+Claude Code Enterprise
+Claude Cowork
+@Claude
+Claude Design
+Claude Science
+Claude Security
+Claude for Chrome
+Claude for Microsoft 365
+Skills
+Download app
+Pricing
+Log in to Claude
+Models
+Mythos
+Fable
+Opus
+Sonnet
+Haiku
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Enterprise
+Financial services
+Government
+Healthcare
+Legal
+Life sciences
+Nonprofits
+Security
+Small business
+Startups
+Claude Platform
+Overview
+Developer docs
+Pricing
+Ecosystem
+Marketplace
+Regional compliance
+Claude on AWS
+Google Cloud
+Microsoft Foundry
+Console login
+Resources
+Blog
+Claude partner network
+Community
+Connectors
+Courses
+Customer stories
+Engineering at Anthropic
+Events
+Inside Claude Code
+Inside Claude Cowork
+Inside Claude Enterprise
+Plugins
+Powered by Claude
+Service partners
+Tutorials
+Use cases
+Help and security
+Availability
+Status
+Support center
+Company
+Anthropic
+Careers
+Policy
+Economic Futures
+Research
+News
+Claude’s Constitution
+Claude Corps
+Policy on the AI Exponential
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Terms and policies
+Privacy policy
+Consumer health data privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+© 2026 Anthropic PBC

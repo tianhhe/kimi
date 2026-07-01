@@ -1,0 +1,179 @@
+URL: https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/security
+SOURCE_GROUP: claude-platform-docs
+TITLE: MCP tunnels security
+
+Cookie settings
+We use cookies to deliver and improve our services, analyze site usage, and if you agree, to customize or personalize your experience and market our services to you. You can read our Cookie Policy here .
+Customize Customize Cookie Settings Reject Reject All Cookies Accept Accept All Cookies
+Claude Platform Docs
+Messages
+Managed Agents
+Admin
+Resources 
+ API reference
+English   Console Log in
+ 
+
+Search...
+⌘K
+First steps
+Intro to Claude Quickstart
+Building with Claude
+Features overview Using the Messages API Stop reasons and fallback Refusals and fallback Fallback credit
+Model capabilities
+Extended thinking Adaptive thinking Effort Task budgets (beta) Fast mode (research preview) Structured outputs Citations Streaming Messages Batch processing Search results Streaming refusals Multilingual support Embeddings
+Tools
+Overview How tool use works Tutorial: Build a tool-using agent Define tools Handle tool calls Parallel tool use Tool Runner (SDK) Strict tool use Server tools Web search tool Web fetch tool Code execution tool Advisor tool Tool search tool Memory tool Bash tool Text editor tool Computer use tool Troubleshooting
+Tool infrastructure
+Tool reference Manage tool context Tool combinations Tool use with prompt caching Programmatic tool calling Fine-grained tool streaming
+Context management
+Context windows Compaction Context editing Prompt caching Mid-conversation system messages Build an orchestration mode Cache diagnostics (beta) Token counting
+Working with files
+Files API PDF support Images and vision 
+Skills
+Overview Quickstart Best practices Skills for enterprise Skills in the API
+MCP
+Remote MCP servers MCP connector MCP tunnels  Overview Architecture and components Quickstart Manage in the Console Deploy with Helm Deploy with Docker Compose Security Troubleshooting Reference
+Claude on cloud platforms
+Amazon Bedrock Amazon Bedrock (legacy) Claude Platform on AWS Google Cloud Microsoft Foundry
+ Log in
+ Messages  Security
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Claude Platform Docs
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Financial services
+Government
+Life sciences
+Partners
+Claude on AWS
+Claude on Google Cloud
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Company
+Anthropic
+Careers
+Economic Futures
+Research
+News
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Help and security
+Availability
+Status
+Support
+Discord
+Terms and policies
+Privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+Messages / MCP tunnels
+MCP tunnels security
+Copy page
+
+Hardening guidance, credential rotation, breach response, and teardown for MCP tunnel deployments.
+Copy page
+
+
+MCP tunnels are in research preview. Request access to try them.
+The tunnel architecture provides strong defaults (outbound-only connectivity, end-to-end encryption, and IP validation), but the overall security of your tunnel stack also depends on how you configure and operate it. This page covers recommended hardening, breach response, and how to decommission a tunnel.
+
+Best practices
+Require OAuth on every MCP server. Configure each upstream MCP server to require OAuth as described in the MCP authorization spec . OAuth provides defense in depth on top of the tunnel's transport authentication and enables user-level authorization at the data layer.
+Enable SSO for your organization. Tunnels, federation rules, and service accounts are managed in the Claude Console. SSO enforces your identity provider's session controls on the admins who can change them.
+Restrict upstream.allowed_ips . Use the smallest CIDR ranges that cover your MCP servers. This is the proxy 's primary SSRF defense.
+Monitor logs. Alert on warnings, errors, and unusual traffic patterns from the tunnel stack.
+Rotate credentials. Rotate the server certificate and tunnel token on a regular schedule, and immediately if you suspect compromise.
+Keep images updated. Track new proxy releases and pin images by SHA-256 digest.
+Limit network reach. The proxy and cloudflared should only be able to reach the destinations listed in the network requirements . Use NetworkPolicy (Kubernetes) or host firewall rules (Compose).
+Limit MCP server scope. Each server should expose only the tools and data required for its purpose.
+Protect credentials at rest. Apply your organization's secrets-management practices to private keys and tunnel tokens.
+
+Respond to a suspected breach
+If you believe your tunnel token, TLS keys, or proxy host has been compromised:
+1
+Stop the tunnel stack
+Helm
+Helm
+Docker Compose
+Docker Compose
+2
+Detach the upstream MCP servers
+Remove the upstream MCP servers from any Managed Agent sessions that use them, and stop passing their URLs in the mcp_servers block of Messages API requests.
+3
+Archive the tunnel
+Archiving invalidates the tunnel token and detaches the domain. In the Console, archive the tunnel from the MCP tunnels list. To archive over the API instead, see Archive a tunnel .
+4
+Contact Anthropic
+Report the suspected compromise to Anthropic support.
+5
+Rotate downstream credentials
+Re-provision a fresh tunnel and rotate any OAuth tokens that the affected MCP servers issued.
+6
+Review logs before restoring service
+Inspect proxy, cloudflared, and MCP server logs for the window of suspected compromise before bringing the new tunnel online.
+
+Tear down a tunnel
+Follow these steps to decommission a tunnel and remove all stored credentials.
+1
+Stop the tunnel stack
+Helm
+Helm
+Docker Compose
+Docker Compose
+2
+Archive the tunnel
+In the Console, archive the tunnel from the MCP tunnels list.
+3
+Remove stored credentials
+Helm
+Helm
+Docker Compose
+Docker Compose
+Was this page helpful?
+ 
+Best practices
+Respond to a suspected breach
+Tear down a tunnel

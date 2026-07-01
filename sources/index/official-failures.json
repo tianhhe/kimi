@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://www.anthropic.com/engineering/claude-code-best-practices",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "finalUrl": "https://code.claude.com/docs/en/best-practices"
+  },
+  {
+    "url": "https://www.anthropic.com/legal/acst-disclosure",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "finalUrl": "https://www.anthropic.com/legal/acst-disclosure"
+  },
+  {
+    "url": "https://www.anthropic.com/news/fine-tune-claude-3-haiku",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "finalUrl": "https://claude.com/blog/fine-tune-claude-3-haiku"
+  },
+  {
+    "url": "https://www.anthropic.com/product/security",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "finalUrl": "https://claude.com/product/claude-security"
+  }
+]

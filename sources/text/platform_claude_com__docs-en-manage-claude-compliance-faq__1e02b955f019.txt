@@ -1,0 +1,132 @@
+URL: https://platform.claude.com/docs/en/manage-claude/compliance-faq
+SOURCE_GROUP: claude-platform-docs
+TITLE: Compliance API FAQ
+
+Cookie settings
+We use cookies to deliver and improve our services, analyze site usage, and if you agree, to customize or personalize your experience and market our services to you. You can read our Cookie Policy here .
+Customize Customize Cookie Settings Reject Reject All Cookies Accept Accept All Cookies
+Claude Platform Docs
+Messages
+Managed Agents
+Admin
+Resources 
+ API reference
+English   Console Log in
+ 
+
+Search...
+⌘K
+Organization
+Admin API Workspaces
+Authentication
+Overview Create an Admin API key Workload Identity Federation Manage WIF via API WIF reference Identity providers 
+Monitoring
+Usage and Cost API Rate Limits API Analytics APIs Claude Code Analytics API Spend Limits API
+Data & compliance
+Data residency API and data retention Access Transparency Encryption keys 
+Compliance API
+Overview Get access Activity Feed Chats, files, and projects Organizations, users, roles, groups, and settings Design your integration Errors FAQ
+ Log in
+ Admin  FAQ
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Claude Platform Docs
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Financial services
+Government
+Life sciences
+Partners
+Claude on AWS
+Claude on Google Cloud
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Company
+Anthropic
+Careers
+Economic Futures
+Research
+News
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Help and security
+Availability
+Status
+Support
+Discord
+Terms and policies
+Privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+Admin / Compliance API
+Compliance API FAQ
+Copy page
+
+Answers to common questions about Compliance API access, scopes, retention, and integration.
+Copy page
+
+
+To enable the Compliance API, see Get access to the Compliance API .
+
+Access and scopes
+Why doesn't my parent organization appear in Claude Console when creating an Admin API key?
+Can I use my regular Claude API key with the Compliance API?
+Why does my Admin API key return 403 on chat or file endpoints?
+
+Data coverage and retention
+How far back does the Activity Feed go?
+Does the Activity Feed include prompt or message content?
+Is deleted content recoverable through the Compliance API?
+What does the Compliance API not capture?
+
+Integration and pagination
+How do I correlate Compliance API records with my SIEM?
+Can one customer have multiple organizations under one parent?
+Are activities returned in order, and how do I detect when I have caught up to real time?
+How do I get a sandbox to test the Compliance API?
+Was this page helpful?
+ 
+Access and scopes
+Data coverage and retention
+Integration and pagination

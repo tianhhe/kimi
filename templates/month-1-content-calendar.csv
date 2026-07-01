@@ -1,0 +1,41 @@
+week,day,platform,column,title,asset,owner,status
+1,Mon,小红书,Kimi Work 101,第一次用 Kimi Work，先别聊天，先丢给它一个真实任务,新手任务清单,内容负责人,todo
+1,Mon,抖音,一分钟交给 Kimi,老板 1 小时后要竞品分析，我把这件事交给 Kimi,竞品分析模板,短视频,todo
+1,Tue,B站,Kimi Work 从 0 到 1,Kimi Work 新用户第一周 7 个任务,新手课程视频,视频负责人,todo
+1,Tue,知乎,AI 怎么用,不要问 Kimi“帮我分析”，要这样委派任务,Agent Fluency 卡,内容负责人,todo
+1,Wed,小红书,Kimi 模板库,周报不会写，直接复制这个 Kimi 模板,周报模板,内容负责人,todo
+1,Wed,视频号,Kimi 办公工作流,开完会别手写纪要，让 Kimi 生成行动清单,会议模板,短视频,todo
+1,Thu,公众号,Kimi 工作流手册,Kimi Work 101：从一句需求到一份方案,新手手册,内容负责人,todo
+1,Thu,即刻/微博,Kimi 今日任务,今天让 Kimi 整理你的本周待办,待办模板,社群运营,todo
+1,Fri,小红书,某某岗位怎么用 Kimi,产品经理怎么用 Kimi 做竞品分析,竞品矩阵,内容负责人,todo
+1,Fri,社群,每日任务挑战,晒出你的第一份 Kimi 任务结果,打卡表,社群运营,todo
+2,Mon,小红书,Agent Fluency,一个好 Kimi 任务要包含 4 件事,任务描述卡,内容负责人,todo
+2,Mon,抖音,不用 Kimi vs 用 Kimi,不用 Kimi 写周报 vs 用 Kimi 写周报,周报对比,短视频,todo
+2,Tue,B站,岗位工作流,市场人怎么用 Kimi 做 GTM 计划,GTM 模板,视频负责人,todo
+2,Tue,知乎,横评,Kimi Work 和普通聊天的差别在哪里,对比表,内容负责人,todo
+2,Wed,小红书,学习工作流,文献综述从 0 到 1：10 篇论文怎么交给 Kimi,文献矩阵,内容负责人,todo
+2,Wed,视频号,老板突然要,老板没时间读长报告，我用 Kimi 做领导摘要,摘要模板,短视频,todo
+2,Thu,公众号,岗位工作流包,产品/运营/市场怎么用 Kimi 做复杂交付,岗位模板包,内容负责人,todo
+2,Thu,即刻/微博,这个需求可以交给 Kimi,评论区用户需求改成 Kimi 任务,任务卡,社群运营,todo
+2,Fri,小红书,求职工作流,简历不要泛写，把 JD 和经历一起交给 Kimi,JD 匹配模板,内容负责人,todo
+2,Fri,社群,模板共创,本周最佳 Kimi 任务截图征集,案例库,社群运营,todo
+3,Mon,小红书,Kimi Agent 实战,一个 agent 查资料，一个 agent 做表格，一个 agent 写报告,分工图,内容负责人,todo
+3,Mon,抖音,Kimi Agent 实战,我让 Kimi Agent Swarm 分工做市场调研,调研报告,短视频,todo
+3,Tue,B站,Kimi Agent 实战课,Kimi Agent Swarm 做市场调研全流程,调研案例,视频负责人,todo
+3,Tue,知乎,Agent 解释,Kimi Agent 做任务时，人应该怎么介入,人机协作规则,内容负责人,todo
+3,Wed,小红书,内容创作,用 Kimi 拆 10 条爆款，生成 30 天选题,选题表,内容负责人,todo
+3,Wed,视频号,小团队工作包,小团队每周应该交给 Kimi 的 5 件事,团队任务包,短视频,todo
+3,Thu,公众号,Kimi Agent 进阶课,目标 -> 计划 -> 执行 -> 校验 -> 交付,Task Loop 手册,内容负责人,todo
+3,Thu,即刻/微博,功能更新怎么用,Kimi 新功能上线，先给 3 个能马上用的场景,三场景卡,社群运营,todo
+3,Fri,小红书,用户工作流改造,我把用户访谈整理成需求池,需求池模板,内容负责人,todo
+3,Fri,社群,直播答疑,帮 5 个用户把真实任务改成 Kimi 工作流,直播记录,社群运营,todo
+4,Mon,小红书,Kimi 安心用,AI 生成的报告怎么校验？Kimi 用户要会这 4 步,校验清单,内容负责人,todo
+4,Mon,抖音,前后对比,一份资料夹到 10 页 PPT 大纲,Kimi PPT 模板,短视频,todo
+4,Tue,B站,竞品同题挑战,同一个市场调研任务，Kimi 的中文场景优势在哪,对比视频,视频负责人,todo
+4,Tue,知乎,信任内容,把公司资料交给 AI 前，先确认这几件事,安全清单,内容负责人,todo
+4,Wed,小红书,Kimi 模板库,本月 Kimi 模板包：10 个高价值任务直接复制,月度模板包,内容负责人,todo
+4,Wed,视频号,销售工作流,销售拜访前，把客户官网交给 Kimi,拜访提纲,短视频,todo
+4,Thu,公众号,月度资产包,本月 Kimi 高价值任务模板包,模板合集,内容负责人,todo
+4,Thu,即刻/微博,用户案例一句话,这个用户把 Kimi 用成了自己的研究助理,案例短帖,社群运营,todo
+4,Fri,小红书,月度复盘,这个月最值得收藏的 10 个 Kimi 工作流,工作流合集,内容负责人,todo
+4,Fri,社群,月度复盘,优秀案例榜 + 下月选题投票,复盘表,社群运营,todo

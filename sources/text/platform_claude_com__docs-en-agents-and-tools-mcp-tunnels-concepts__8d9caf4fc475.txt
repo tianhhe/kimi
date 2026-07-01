@@ -1,0 +1,155 @@
+URL: https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/concepts
+SOURCE_GROUP: claude-platform-docs
+TITLE: Architecture and components
+
+Cookie settings
+We use cookies to deliver and improve our services, analyze site usage, and if you agree, to customize or personalize your experience and market our services to you. You can read our Cookie Policy here .
+Customize Customize Cookie Settings Reject Reject All Cookies Accept Accept All Cookies
+Claude Platform Docs
+Messages
+Managed Agents
+Admin
+Resources 
+ API reference
+English   Console Log in
+ 
+
+Search...
+⌘K
+First steps
+Intro to Claude Quickstart
+Building with Claude
+Features overview Using the Messages API Stop reasons and fallback Refusals and fallback Fallback credit
+Model capabilities
+Extended thinking Adaptive thinking Effort Task budgets (beta) Fast mode (research preview) Structured outputs Citations Streaming Messages Batch processing Search results Streaming refusals Multilingual support Embeddings
+Tools
+Overview How tool use works Tutorial: Build a tool-using agent Define tools Handle tool calls Parallel tool use Tool Runner (SDK) Strict tool use Server tools Web search tool Web fetch tool Code execution tool Advisor tool Tool search tool Memory tool Bash tool Text editor tool Computer use tool Troubleshooting
+Tool infrastructure
+Tool reference Manage tool context Tool combinations Tool use with prompt caching Programmatic tool calling Fine-grained tool streaming
+Context management
+Context windows Compaction Context editing Prompt caching Mid-conversation system messages Build an orchestration mode Cache diagnostics (beta) Token counting
+Working with files
+Files API PDF support Images and vision 
+Skills
+Overview Quickstart Best practices Skills for enterprise Skills in the API
+MCP
+Remote MCP servers MCP connector MCP tunnels  Overview Architecture and components Quickstart Manage in the Console Deploy with Helm Deploy with Docker Compose Security Troubleshooting Reference
+Claude on cloud platforms
+Amazon Bedrock Amazon Bedrock (legacy) Claude Platform on AWS Google Cloud Microsoft Foundry
+ Log in
+ Messages  Architecture and components
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Claude Platform Docs
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Financial services
+Government
+Life sciences
+Partners
+Claude on AWS
+Claude on Google Cloud
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Company
+Anthropic
+Careers
+Economic Futures
+Research
+News
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Help and security
+Availability
+Status
+Support
+Discord
+Terms and policies
+Privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+Messages / MCP tunnels
+Architecture and components
+Copy page
+
+Canonical names for the parts of an MCP tunnel deployment, the two credential-provisioning modes, and the connection model.
+Copy page
+
+
+MCP tunnels are in research preview. Request access to try them.
+This page defines the terms used throughout the MCP tunnels documentation. Several components appear under different names in configuration files, container images, and prose; the following tables give one canonical name for each and list the aliases you may encounter.
+
+Components
+Term Definition Also appears as
+Tunnel stack The two containers you run inside your network to attach to a tunnel: the proxy and cloudflared. One stack serves one tunnel and can be replicated across hosts for availability. With programmatic access, the setup component runs alongside the stack to provision credentials. the stack, the MCP tunnel stack, the tunnel deployment, your deployment
+Proxy Anthropic's routing component. Terminates inner TLS, validates that upstream IPs fall within an allowed range, and routes each request to an upstream MCP server based on hostname. mcp-proxy (image name, Compose service name, and Helm container name), mcp-gateway (container-internal config path /etc/mcp-gateway/config.yaml and Helm gateway.config.* values prefix)
+cloudflared Cloudflare's open-source tunnel connector. Initiates the outbound-only connections from your network to the tunnel edge and carries encrypted traffic between the edge and the proxy. Not related to a Managed Agent. the outbound connector, the tunnel connector
+Setup component The setup binary, shipped inside the mcp-proxy image. With programmatic access it authenticates over Workload Identity Federation, fetches the tunnel token, generates a CA and server certificate, and registers the CA with Anthropic. Also provides renew-cert . setup Job (the Helm pre-install hook), setup service (the Compose profile), setup hook, setup binary, setup CLI
+Tunnel edge The Cloudflare edge servers that cloudflared dials out to (IP ranges 198.41.192.0/19 and 2606:4700:a0::/44 , port 7844 TCP and UDP). The tunnel that runs over them is provisioned and controlled by Anthropic; Cloudflare operates the underlying network. the edge, the Anthropic-operated tunnel edge
+Inner TLS A second TLS handshake carried inside the tunnel's plaintext WebSocket stream, between Anthropic's backend and your proxy. The proxy presents a server certificate signed by a CA you registered on the tunnel. Because only you hold the private key, the transport provider cannot read request or response payloads. the inner TLS handshake
+Upstream MCP server An MCP server running in your private network that the proxy routes to. Each upstream is exposed as one subdomain under your tunnel domain. upstream, routed MCP server, tunneled MCP server
+
+Credential provisioning
+The tunnel stack needs two credentials at runtime: the tunnel token , which authenticates cloudflared's outbound connection, and a server certificate signed by a CA registered on the tunnel, which the proxy presents during the inner TLS handshake. There are two ways to supply them, presented throughout this guide as a pair of tabs.
+Mode How credentials reach the stack Helm chart name Tab label
+Programmatic access The setup component authenticates to the Tunnels API through Workload Identity Federation , fetches the tunnel token, generates a CA and server certificate locally, and registers the CA. No long-lived secret is copied by hand. Requires a federation rule with the workspace:manage_tunnels scope. Managed mode ( setup.enabled: true , the default) With programmatic access
+Manual You copy the tunnel token from the Claude Console, generate a CA and server certificate yourself (for example with openssl ), register the CA in the Console, and supply the token and certificate to the stack as secrets. No setup component runs. External mode ( setup.enabled: false ) Without programmatic access
+These modes are also referred to as the programmatic flow and the manual flow in the deploy guides.
+
+Connection model
+Two directions are at work in a tunnel, and they point opposite ways:
+Connection direction: cloudflared dials outbound from your network to the tunnel edge. Your firewall sees only egress on port 7844; no inbound port is opened.
+Request direction: once that connection is established, MCP requests travel from Anthropic toward your network over it, through cloudflared to the proxy, and on to the upstream MCP server.
+The phrase "outbound-only" describes the connection, not the requests carried over it.
+Inner TLS spans Anthropic's backend and your proxy. cloudflared and the tunnel edge sit between them on the wire but see only ciphertext; the proxy is the first place inside your network where MCP request payloads are readable.
+
+See also
+MCP tunnels for the security model and shared-responsibility table.
+MCP tunnels reference for proxy configuration fields, certificate requirements, and the setup component.
+Was this page helpful?
+ 
+Components
+Credential provisioning
+Connection model
+See also

@@ -1,0 +1,124 @@
+URL: https://www.anthropic.com/news/deloitte-anthropic-partnership
+SOURCE_GROUP: anthropic-com-sitemap
+TITLE: Anthropic Deloitte Partnership
+
+Skip to main content Skip to footer
+Research
+Policy
+Commitments
+Learn
+News
+Try Claude
+Announcements
+Deloitte will make Claude available to 470,000 people across its global network
+Oct 6, 2025
+Anthropic and Deloitte today announced an expanded alliance that will make Claude available to Deloitte people across its global network and develop new industry-specific solutions powered by Claude. As part of the collaboration, Deloitte will establish a Claude Center of Excellence with trained specialists who will develop implementation frameworks, share leading practices across deployments, and provide ongoing technical support to create the systems needed to move AI pilots to production at scale. The collaboration represents Anthropic's largest enterprise AI deployment to date, available to more than 470,000 Deloitte people.
+Deloitte and Anthropic are co-creating a formal certification program to train and certify 15,000 of its professionals on Claude. These practitioners will help support Claude implementations across Deloitte's network and Deloitte’s internal AI transformation efforts.
+Differentiated Approach
+Deloitte and Anthropic will build AI solutions, including compliance features, that companies in regulated industries–like financial services, healthcare and life sciences, and public services–can deploy. These solutions will combine Claude's safety-first design with Deloitte's Trustworthy AI™ framework, so companies can drive increased transparency into model decision making.
+“Deloitte chose Claude because they need trusted AI that can help their employees and clients across industries and on a global scale—from coding and software development to customer engagement and industry-specific advisory,” said Paul Smith, Chief Commercial Officer of Anthropic. “When the world's leading organizations need to tackle complex, critical work, they choose Anthropic because Claude is built for the compliance and control that enterprises demand."
+"Deloitte is making this significant investment in Anthropic’s AI platform because our approach to responsible AI is very aligned, and together we can reshape how enterprises operate over the next decade. Claude continues to be a leading choice for many clients and our own AI transformation," said Ranjit Bawa, Global Technology and Ecosystems & Alliances Leader, Deloitte Global. “This expanded relationship includes technology integration, plans for the establishment of a Center of Excellence, continued certification of 15,000 professionals, and development of industry-specific solutions as we support our clients through their AI transformations. Anthropic shares our passion for safety and reliability, along with our assessment that enterprise AI should be both powerful and principled."
+Getting Started
+Deloitte clients can contact their account team to discuss deployment options, enterprises can visit our Enterprise page to explore how Claude can transform their operations, and developers can access the Anthropic API at https://www.claude.com/platform/api.
+Deloitte refers to one or more of Deloitte Touche Tohmatsu Limited (DTTL), its global network of member firms, and their related entities (collectively, the “Deloitte organization”). DTTL (also referred to as “Deloitte Global”) and each of its member firms and related entities are legally separate and independent entities, which cannot obligate or bind each other in respect of third parties. DTTL and each DTTL member firm and related entity is liable only for its own acts and omissions, and not those of each other. DTTL does not provide services to clients. Please see www.deloitte.com/about to learn more.
+Deloitte provides leading professional services to nearly 90% of the Fortune Global 500® and thousands of private companies. Our people deliver measurable and lasting results that help reinforce public trust in capital markets and enable clients to transform and thrive. Building on its 180-year history, Deloitte spans more than 150 countries and territories. Learn how Deloitte’s approximately 460,000 people worldwide make an impact that matters at www.deloitte.com
+Related content
+Introducing Claude Sonnet 5
+Sonnet 5 delivers frontier performance across coding, agents, and professional work at scale.
+Read more
+Redeploying Fable 5
+Fable 5 returns globally July 1. We're also proposing an industry-wide framework for scoring jailbreak severity, together with Amazon, Microsoft, Google, and other Glasswing partners.
+Read more
+Claude Science, an AI workbench for scientists, is now available
+Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources.
+Read more
+Products
+Claude
+Claude Code
+Claude Code Enterprise
+Claude Cowork
+@Claude
+Claude Design
+Claude Science
+Claude Security
+Claude for Chrome
+Claude for Microsoft 365
+Skills
+Download app
+Pricing
+Log in to Claude
+Models
+Mythos
+Fable
+Opus
+Sonnet
+Haiku
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Enterprise
+Financial services
+Government
+Healthcare
+Legal
+Life sciences
+Nonprofits
+Security
+Small business
+Startups
+Claude Platform
+Overview
+Developer docs
+Pricing
+Ecosystem
+Marketplace
+Regional compliance
+Claude on AWS
+Google Cloud
+Microsoft Foundry
+Console login
+Resources
+Blog
+Claude partner network
+Community
+Connectors
+Courses
+Customer stories
+Engineering at Anthropic
+Events
+Inside Claude Code
+Inside Claude Cowork
+Inside Claude Enterprise
+Plugins
+Powered by Claude
+Service partners
+Tutorials
+Use cases
+Help and security
+Availability
+Status
+Support center
+Company
+Anthropic
+Careers
+Policy
+Economic Futures
+Research
+News
+Claude’s Constitution
+Claude Corps
+Policy on the AI Exponential
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Terms and policies
+Privacy policy
+Consumer health data privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+© 2026 Anthropic PBC

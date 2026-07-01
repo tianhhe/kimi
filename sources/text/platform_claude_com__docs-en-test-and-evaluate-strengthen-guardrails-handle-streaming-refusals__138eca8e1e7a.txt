@@ -1,0 +1,218 @@
+URL: https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/handle-streaming-refusals
+SOURCE_GROUP: claude-platform-docs
+TITLE: Streaming refusals
+
+Cookie settings
+We use cookies to deliver and improve our services, analyze site usage, and if you agree, to customize or personalize your experience and market our services to you. You can read our Cookie Policy here .
+Customize Customize Cookie Settings Reject Reject All Cookies Accept Accept All Cookies
+Claude Platform Docs
+Messages
+Managed Agents
+Admin
+Resources 
+ API reference
+English   Console Log in
+ 
+
+Search...
+⌘K
+First steps
+Intro to Claude Quickstart
+Building with Claude
+Features overview Using the Messages API Stop reasons and fallback Refusals and fallback Fallback credit
+Model capabilities
+Extended thinking Adaptive thinking Effort Task budgets (beta) Fast mode (research preview) Structured outputs Citations Streaming Messages Batch processing Search results Streaming refusals Multilingual support Embeddings
+Tools
+Overview How tool use works Tutorial: Build a tool-using agent Define tools Handle tool calls Parallel tool use Tool Runner (SDK) Strict tool use Server tools Web search tool Web fetch tool Code execution tool Advisor tool Tool search tool Memory tool Bash tool Text editor tool Computer use tool Troubleshooting
+Tool infrastructure
+Tool reference Manage tool context Tool combinations Tool use with prompt caching Programmatic tool calling Fine-grained tool streaming
+Context management
+Context windows Compaction Context editing Prompt caching Mid-conversation system messages Build an orchestration mode Cache diagnostics (beta) Token counting
+Working with files
+Files API PDF support Images and vision 
+Skills
+Overview Quickstart Best practices Skills for enterprise Skills in the API
+MCP
+Remote MCP servers MCP connector MCP tunnels 
+Claude on cloud platforms
+Amazon Bedrock Amazon Bedrock (legacy) Claude Platform on AWS Google Cloud Microsoft Foundry
+ Log in
+ Messages  Streaming refusals
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Claude Platform Docs
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Financial services
+Government
+Life sciences
+Partners
+Claude on AWS
+Claude on Google Cloud
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Company
+Anthropic
+Careers
+Economic Futures
+Research
+News
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Help and security
+Availability
+Status
+Support
+Discord
+Terms and policies
+Privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+Messages / Model capabilities
+Streaming refusals
+Copy page
+
+Detect and handle refusal stop reasons in streaming responses, and retry refused requests on a fallback model.
+Copy page
+
+Starting with Claude 4 models, streaming responses from Claude's API return stop_reason : "refusal" when streaming classifiers intervene to handle potential policy violations. This safety feature helps maintain content compliance during real-time streaming.
+
+This page covers how refusals appear in streaming responses. For every stop_reason value and how to handle it, see Stop reasons and fallback . To retry refused requests on another Claude model, see Refusals and fallback .
+
+API response format
+When streaming classifiers detect content that violates Anthropic's policies, the API returns this response:
+{
+"role" : "assistant" ,
+"content" : [
+{
+"type" : "text" ,
+"text" : "Hello.."
+}
+],
+"stop_reason" : "refusal"
+}
+
+
+No additional refusal message is included. You must handle the response and provide appropriate user-facing messaging.
+
+Reset context after refusal
+When you receive stop_reason : refusal , you must reset the conversation context before continuing. You can remove or rephrase the turn that triggered the refusal, or clear the conversation history entirely. Attempting to continue without resetting will result in continued refusals.
+
+Usage metrics are still provided in the response, even when the response is refused.
+When a refusal arrives before Claude generates any output, you are not billed for the request on the Claude API, and the usage counts in that response are informational only. When Claude generates output before the refusal, you are billed for that request.
+
+Resetting context is not the only way to recover. You can also retry the refused request on a different Claude model, and the Refusals and fallback page shows how to set that up with server-side fallback, the SDK middleware, or a manual retry.
+
+Implementation guide
+Here's how to detect and handle streaming refusals in your application:
+cURL Python TypeScript C# Go Java PHP Ruby
+
+client = anthropic.Anthropic()
+messages = []
+def reset_conversation ():
+"""Reset conversation context after refusal"""
+global messages
+messages = []
+print ( "Conversation reset due to refusal" )
+try :
+with client.messages.stream(
+max_tokens = 1024 ,
+messages = messages + [{ "role" : "user" , "content" : "Hello" }],
+model = "claude-opus-4-8" ,
+) as stream:
+for event in stream:
+# Check for refusal in message delta
+if event.type == "message_delta" :
+if event.delta.stop_reason == "refusal" :
+reset_conversation()
+break
+except Exception as e:
+print ( f "Error: { e } " )
+
+Current refusal types
+The API currently handles refusals in three different ways:
+Refusal Type Response Format When It Occurs
+Streaming classifier refusals stop_reason : refusal During streaming when content violates policies
+API input and copyright validation 400 error codes When input fails validation checks
+Model-generated refusals Standard text responses When the model itself decides to refuse
+
+Future API versions will expand the stop_reason : refusal pattern to unify refusal handling across all types.
+
+Best practices
+Monitor for refusals: Include stop_reason : refusal checks in your error handling
+Reset automatically: Implement automatic context reset when refusals are detected
+Fall back to another model: Configure server-side fallback or the SDK middleware so refused requests are retried on another Claude model instead of surfacing a refusal to the user
+Redeem fallback credit on manual retries: If you build the retry yourself, pass the refusal's fallback credit token so the retry doesn't pay the prompt-cache cost twice
+Provide custom messaging: Create user-friendly messages for better UX when refusals occur
+Track refusal patterns: Monitor refusal frequency to identify potential issues with your prompts
+
+Migration notes
+If you built refusal handling when this feature first shipped, or you're adding it to an existing integration, check the following:
+Refusals are responses, not errors. A refusal arrives as a successful HTTP 200 response with stop_reason : "refusal" , so monitoring built only on error rates won't surface it. Track refusals as their own signal.
+Newer models return more detail. On Claude Fable 5, a refusal also includes a stop_details object that identifies the policy category behind the decline. See Refusals and fallback for the full response shape.
+Retry on a different model. Re-sending a refused request to the same model usually results in another refusal. Instead of only resetting context, retry on a fallback model with server-side fallback, the SDK middleware, or a manual retry , and redeem fallback credit when you build the retry yourself.
+Check batch results for refusals. A refused request in a Message Batch is returned as a succeeded result with stop_reason : "refusal" , not as an errored result.
+Centralize handling on stop_reason . The API continues to consolidate refusal handling around stop_reason : "refusal" , so branch on the stop reason rather than on model-specific behavior.
+
+Next steps
+Refusals and fallback
+Retry refused requests on another Claude model, server-side or in your client.
+
+Stop reasons and fallback
+Every stop_reason value and how to handle it.
+
+Streaming messages
+Stream responses and read stop_reason from message_delta events as they arrive.
+
+Multilingual support
+Serve users across languages with Claude's cross-lingual capabilities.
+Was this page helpful?
+ 
+API response format
+Reset context after refusal
+Implementation guide
+Current refusal types
+Best practices
+Migration notes
+Next steps

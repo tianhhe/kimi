@@ -1,0 +1,122 @@
+URL: https://www.anthropic.com/news/claude-gov-models-for-u-s-national-security-customers
+SOURCE_GROUP: anthropic-com-sitemap
+TITLE: Claude Gov models for U.S. national security customers
+
+Skip to main content Skip to footer
+Research
+Policy
+Commitments
+Learn
+News
+Try Claude
+Announcements
+Claude Gov models for U.S. national security customers
+Jun 6, 2025
+We’re introducing a custom set of Claude Gov models built exclusively for U.S. national security customers. The models are already deployed by agencies at the highest level of U.S. national security, and access to these models is limited to those who operate in such classified environments.
+Claude Gov models were built based on direct feedback from our government customers to address real-world operational needs, and underwent the same rigorous safety testing as all of our Claude models. The result is a set of Claude models that understands our customers’ unique national security requirements while maintaining Anthropic's unwavering commitment to safety and responsible AI development.
+U.S. national security customers may choose to use our AI systems for a wide range of applications from strategic planning and operational support to intelligence analysis and threat assessment. Claude Gov models deliver enhanced performance for critical government needs and specialized tasks. This includes:
+Improved handling of classified materials, as the models refuse less when engaging with classified information
+Greater understanding of documents and information within the intelligence and defense contexts
+Enhanced proficiency in languages and dialects critical to national security operations
+Improved understanding and interpretation of complex cybersecurity data for intelligence analysis
+This builds on our commitment to bring responsible and safe AI solutions to our U.S. national security customers, with custom models that are built to address the unique needs of classified environments. To learn more about the Claude Gov models and see how they can support your agency's mission, you can reach our public sector team at pubsec@anthropic.com .
+Related content
+Introducing Claude Sonnet 5
+Sonnet 5 delivers frontier performance across coding, agents, and professional work at scale.
+Read more
+Redeploying Fable 5
+Fable 5 returns globally July 1. We're also proposing an industry-wide framework for scoring jailbreak severity, together with Amazon, Microsoft, Google, and other Glasswing partners.
+Read more
+Claude Science, an AI workbench for scientists, is now available
+Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources.
+Read more
+Products
+Claude
+Claude Code
+Claude Code Enterprise
+Claude Cowork
+@Claude
+Claude Design
+Claude Science
+Claude Security
+Claude for Chrome
+Claude for Microsoft 365
+Skills
+Download app
+Pricing
+Log in to Claude
+Models
+Mythos
+Fable
+Opus
+Sonnet
+Haiku
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Enterprise
+Financial services
+Government
+Healthcare
+Legal
+Life sciences
+Nonprofits
+Security
+Small business
+Startups
+Claude Platform
+Overview
+Developer docs
+Pricing
+Ecosystem
+Marketplace
+Regional compliance
+Claude on AWS
+Google Cloud
+Microsoft Foundry
+Console login
+Resources
+Blog
+Claude partner network
+Community
+Connectors
+Courses
+Customer stories
+Engineering at Anthropic
+Events
+Inside Claude Code
+Inside Claude Cowork
+Inside Claude Enterprise
+Plugins
+Powered by Claude
+Service partners
+Tutorials
+Use cases
+Help and security
+Availability
+Status
+Support center
+Company
+Anthropic
+Careers
+Policy
+Economic Futures
+Research
+News
+Claude’s Constitution
+Claude Corps
+Policy on the AI Exponential
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Terms and policies
+Privacy policy
+Consumer health data privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+© 2026 Anthropic PBC

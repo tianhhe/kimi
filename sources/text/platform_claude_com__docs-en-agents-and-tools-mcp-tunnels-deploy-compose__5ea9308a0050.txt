@@ -1,0 +1,224 @@
+URL: https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/deploy-compose
+SOURCE_GROUP: claude-platform-docs
+TITLE: Deploy MCP tunnels with Docker Compose
+
+Cookie settings
+We use cookies to deliver and improve our services, analyze site usage, and if you agree, to customize or personalize your experience and market our services to you. You can read our Cookie Policy here .
+Customize Customize Cookie Settings Reject Reject All Cookies Accept Accept All Cookies
+Claude Platform Docs
+Messages
+Managed Agents
+Admin
+Resources 
+ API reference
+English   Console Log in
+ 
+
+Search...
+⌘K
+First steps
+Intro to Claude Quickstart
+Building with Claude
+Features overview Using the Messages API Stop reasons and fallback Refusals and fallback Fallback credit
+Model capabilities
+Extended thinking Adaptive thinking Effort Task budgets (beta) Fast mode (research preview) Structured outputs Citations Streaming Messages Batch processing Search results Streaming refusals Multilingual support Embeddings
+Tools
+Overview How tool use works Tutorial: Build a tool-using agent Define tools Handle tool calls Parallel tool use Tool Runner (SDK) Strict tool use Server tools Web search tool Web fetch tool Code execution tool Advisor tool Tool search tool Memory tool Bash tool Text editor tool Computer use tool Troubleshooting
+Tool infrastructure
+Tool reference Manage tool context Tool combinations Tool use with prompt caching Programmatic tool calling Fine-grained tool streaming
+Context management
+Context windows Compaction Context editing Prompt caching Mid-conversation system messages Build an orchestration mode Cache diagnostics (beta) Token counting
+Working with files
+Files API PDF support Images and vision 
+Skills
+Overview Quickstart Best practices Skills for enterprise Skills in the API
+MCP
+Remote MCP servers MCP connector MCP tunnels  Overview Architecture and components Quickstart Manage in the Console Deploy with Helm Deploy with Docker Compose Security Troubleshooting Reference
+Claude on cloud platforms
+Amazon Bedrock Amazon Bedrock (legacy) Claude Platform on AWS Google Cloud Microsoft Foundry
+ Log in
+ Messages  Deploy with Docker Compose
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Claude Platform Docs
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Financial services
+Government
+Life sciences
+Partners
+Claude on AWS
+Claude on Google Cloud
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Company
+Anthropic
+Careers
+Economic Futures
+Research
+News
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Help and security
+Availability
+Status
+Support
+Discord
+Terms and policies
+Privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+Messages / MCP tunnels
+Deploy MCP tunnels with Docker Compose
+Copy page
+
+Install the MCP tunnel stack on a VM using Docker Compose.
+Copy page
+
+
+MCP tunnels are in research preview. Request access to try them.
+This guide deploys the tunnel stack as hardened containers on a single host. The same configuration can be replicated across multiple hosts for availability.
+
+Before you begin
+You need:
+A tunnel. With programmatic access, the setup component creates one for you when you don't supply a tunnel ID; to attach to an existing tunnel instead, create it in the Console and record the tunnel ID ( tnl_... ). Manual provisioning always starts from a Console-created tunnel.
+A way for the host to authenticate to the Tunnels API.
+Programmatic access (recommended). Turn on Set up programmatic access when creating the tunnel (or create the federation rule directly under Settings > Workload identity if you're letting the setup component create the tunnel) so the setup component can authenticate through Workload Identity Federation. Record the federation rule ID ( fdrl_... ) and your organization ID.
+Manual. Skip programmatic access. You'll get the tunnel token from the Console , generate a CA and server certificate yourself, and register the CA in the Console .
+A host with Docker and Docker Compose installed. The manual flow also requires openssl (1.1.1 or newer).
+Outbound network connectivity from the host to api.anthropic.com (443 TCP) and the tunnel edge (7844 TCP and UDP). See the full network requirements .
+One or more MCP servers running and reachable from the host on the addresses you'll configure under routes . If you don't have one yet, use the sample server .
+
+Optional: Use a sample MCP server
+If you don't have an MCP server available for testing, use this minimal one:
+mkdir -p mcp-tunnel
+cat > mcp-tunnel/hello_server.py << 'EOF'
+from mcp.server.fastmcp import FastMCP
+mcp = FastMCP("hello-server", host="0.0.0.0", port=9000)
+@mcp.tool()
+def hello(name: str = "world") -> str:
+"""Say hello to someone."""
+return f"Hello, {name}!"
+if __name__ == "__main__":
+mcp.run(transport="streamable-http")
+EOF
+
+The following Install steps cd into mcp-tunnel/ and note where to add the corresponding service and route.
+
+Install
+This guide provides one reference approach using Docker Compose. You are responsible for adapting it to meet your organization's security requirements.
+With programmatic access
+With programmatic access
+Without programmatic access
+Without programmatic access
+The compose file reads TUNNEL_TOKEN from the host environment with no default, so the export must be repeated in every fresh shell and after a reboot.
+For a multi-VM deployment, copy the mcp-tunnel/ directory to each host, set TUNNEL_TOKEN , and run docker compose up -d . In the programmatic flow TUNNEL_TOKEN is $(sudo cat data/tunnel-token) ; in the manual flow it's the value you copied from the Console. The same tunnel token and certificates work across all replicas.
+
+Verify the deployment
+Verify end to end by calling an upstream MCP server from Anthropic's side: see Use the tunneled MCP servers . With the sample MCP server , the routed URL is https://echo.<your-tunnel-domain>/mcp . If verification fails, see Troubleshooting .
+
+Upgrades
+Run the commands in this section from inside the mcp-tunnel/ deployment directory.
+
+Rotate the tunnel token
+With programmatic access, increment --token-version in the setup service command, set the Workload Identity Federation identifiers, mint a fresh OIDC JWT, and re-run the setup component:
+# Edit docker-compose.yaml: increment the integer in the setup service's
+# --token-version argument (for example, --token-version=1 to
+# --token-version=2). The setup binary refuses to rotate when the value
+# hasn't changed.
+# export TUNNEL_ID=tnl_... # set only if you set it during install
+export ANTHROPIC_FEDERATION_RULE_ID = fdrl_ ...
+export ANTHROPIC_ORGANIZATION_ID = 00000000-0000-0000-0000-000000000000
+# export ANTHROPIC_WORKSPACE_ID=wrkspc_... # if your rule is workspace-scoped
+# Re-mint ANTHROPIC_IDENTITY_TOKEN per the WIF provider guide for your
+# environment (it will have expired since install).
+export ANTHROPIC_IDENTITY_TOKEN = ...
+docker compose run --rm setup
+export TUNNEL_TOKEN = $( sudo cat data/tunnel-token )
+docker compose up -d cloudflared
+
+The --token-version argument is edited in docker-compose.yaml rather than passed on the command line so the new value persists for future runs of the setup component. The setup component authenticates with Workload Identity Federation; there is no API token to revoke.
+Without programmatic access, click Rotate token on the tunnel detail page in the Console, then update the TUNNEL_TOKEN environment variable on each host and restart cloudflared ( docker compose up -d cloudflared ).
+
+Clicking Rotate token invalidates the current token immediately. Between that moment and updating TUNNEL_TOKEN on every host and restarting cloudflared, any host whose cloudflared restarts (crash, host reboot) cannot reconnect. Update each host promptly after rotating.
+
+Certificate renewal
+You're responsible for monitoring expiry and renewing the server certificate before it expires.
+With programmatic access:
+docker compose run --rm setup renew-cert --output=dir:/data
+
+The CLI arguments replace the setup service's command (the init arguments) but keep its entrypoint , so this runs /setup renew-cert --output=dir:/data .
+
+Pass --renew-before=720h to make the command a no-op when more than 30 days of validity remain. This makes it safe to run on a fixed schedule.
+Without programmatic access, sign a new server certificate with your existing CA (the CA registered in the Console doesn't change) and replace data/tls.crt . Set TUNNEL_DOMAIN first if you're running this from a fresh shell.
+export TUNNEL_DOMAIN = YOUR_TUNNEL_DOMAIN_HERE
+openssl req -new -key data/tls.key -out /tmp/server.csr \
+-subj "/CN=${ TUNNEL_DOMAIN }"
+openssl x509 -req -in /tmp/server.csr \
+-CA data/ca.crt -CAkey data/ca.key -CAcreateserial \
+-out data/tls.crt -days 90 \
+-extfile data/tls.ext
+
+In either flow the proxy polls tls.cert_file and reloads it automatically, so no restart is required.
+
+Next steps
+
+Use the tunneled MCP servers
+Attach an upstream MCP server to a Managed Agent or the Messages API.
+
+Security
+Hardening guidance, credential rotation, and breach response.
+
+Troubleshooting
+Diagnose connectivity, TLS, and routing issues.
+Was this page helpful?
+ 
+Before you begin
+Optional: Use a sample MCP server
+Install
+Verify the deployment
+Upgrades
+Rotate the tunnel token
+Certificate renewal
+Next steps

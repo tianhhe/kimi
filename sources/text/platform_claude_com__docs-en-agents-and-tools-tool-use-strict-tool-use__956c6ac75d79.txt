@@ -1,0 +1,219 @@
+URL: https://platform.claude.com/docs/en/agents-and-tools/tool-use/strict-tool-use
+SOURCE_GROUP: claude-platform-docs
+TITLE: Strict tool use
+
+Cookie settings
+We use cookies to deliver and improve our services, analyze site usage, and if you agree, to customize or personalize your experience and market our services to you. You can read our Cookie Policy here .
+Customize Customize Cookie Settings Reject Reject All Cookies Accept Accept All Cookies
+Claude Platform Docs
+Messages
+Managed Agents
+Admin
+Resources 
+ API reference
+English   Console Log in
+ 
+
+Search...
+⌘K
+First steps
+Intro to Claude Quickstart
+Building with Claude
+Features overview Using the Messages API Stop reasons and fallback Refusals and fallback Fallback credit
+Model capabilities
+Extended thinking Adaptive thinking Effort Task budgets (beta) Fast mode (research preview) Structured outputs Citations Streaming Messages Batch processing Search results Streaming refusals Multilingual support Embeddings
+Tools
+Overview How tool use works Tutorial: Build a tool-using agent Define tools Handle tool calls Parallel tool use Tool Runner (SDK) Strict tool use Server tools Web search tool Web fetch tool Code execution tool Advisor tool Tool search tool Memory tool Bash tool Text editor tool Computer use tool Troubleshooting
+Tool infrastructure
+Tool reference Manage tool context Tool combinations Tool use with prompt caching Programmatic tool calling Fine-grained tool streaming
+Context management
+Context windows Compaction Context editing Prompt caching Mid-conversation system messages Build an orchestration mode Cache diagnostics (beta) Token counting
+Working with files
+Files API PDF support Images and vision 
+Skills
+Overview Quickstart Best practices Skills for enterprise Skills in the API
+MCP
+Remote MCP servers MCP connector MCP tunnels 
+Claude on cloud platforms
+Amazon Bedrock Amazon Bedrock (legacy) Claude Platform on AWS Google Cloud Microsoft Foundry
+ Log in
+ Messages  Strict tool use
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Claude Platform Docs
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Financial services
+Government
+Life sciences
+Partners
+Claude on AWS
+Claude on Google Cloud
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Company
+Anthropic
+Careers
+Economic Futures
+Research
+News
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Help and security
+Availability
+Status
+Support
+Discord
+Terms and policies
+Privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+Messages / Tools
+Strict tool use
+Copy page
+
+Enforce JSON Schema compliance on Claude's tool inputs with grammar-constrained sampling.
+Copy page
+
+Setting strict: true on a tool definition guarantees Claude's tool inputs match your JSON Schema by constraining the model's token sampling to schema-valid outputs (a technique called grammar-constrained sampling). This page covers why strict mode matters for agents, how to enable it, and common use cases. For the supported JSON Schema subset, see JSON Schema limitations . For non-strict schema guidance, see Define tools .
+Strict tool use validates tool parameters, ensuring Claude calls your functions with correctly-typed arguments. Use strict tool use when you need to:
+Validate tool parameters
+Build agentic workflows
+Ensure type-safe function calls
+Handle complex tools with nested properties
+
+Why strict tool use matters for agents
+Building reliable agentic systems requires guaranteed schema conformance. Without strict mode, Claude might return incompatible types ( "2" instead of 2 ) or omit required fields, breaking your functions and causing runtime errors.
+Strict tool use guarantees type-safe parameters:
+Functions receive correctly-typed arguments every time
+No need to validate and retry tool calls
+Production-ready agents that work consistently at scale
+For example, suppose a booking system needs passengers: int . Without strict mode, Claude might provide passengers: "two" or passengers: "2" . With strict: true , the response always contains passengers: 2 .
+
+Quick start
+cURL CLI Python TypeScript C# Go Java PHP Ruby
+
+client = anthropic.Anthropic()
+response = client.messages.create(
+model = "claude-opus-4-8" ,
+max_tokens = 1024 ,
+messages = [{ "role" : "user" , "content" : "What's the weather like in San Francisco?" }],
+tools = [
+{
+"name" : "get_weather" ,
+"description" : "Get the current weather in a given location" ,
+"strict" : True , # Enable strict mode
+"input_schema" : {
+"type" : "object" ,
+"properties" : {
+"location" : {
+"type" : "string" ,
+"description" : "The city and state, e.g. San Francisco, CA" ,
+},
+"unit" : {
+"type" : "string" ,
+"enum" : [ "celsius" , "fahrenheit" ],
+"description" : "The unit of temperature, either 'celsius' or 'fahrenheit'" ,
+},
+},
+"required" : [ "location" ],
+"additionalProperties" : False ,
+},
+}
+],
+)
+print (response.content)
+Response format: Tool use blocks with validated inputs in response.content[x].input
+Output
+
+{
+"type" : "tool_use" ,
+"name" : "get_weather" ,
+"input" : {
+"location" : "San Francisco, CA"
+}
+}
+Guarantees:
+Tool input strictly follows the input_schema
+Tool name is always valid (from provided tools or server tools)
+
+How it works
+1
+Define your tool schema
+Create a JSON schema for your tool's input_schema . The schema uses standard JSON Schema format with some limitations (see JSON Schema limitations ).
+2
+Add strict: true
+Set "strict": true as a top-level property in your tool definition, alongside name , description , and input_schema .
+3
+Handle tool calls
+When Claude uses the tool, the input field in the tool_use block strictly follows your input_schema , and the name is always valid.
+
+Common use cases
+Validated tool inputs
+Agentic workflow with multiple validated tools
+
+Data retention
+Strict tool use compiles tool input_schema definitions into grammars using the same pipeline as structured outputs . Tool schemas are temporarily cached for up to 24 hours since last use. Prompts and responses are not retained beyond the API response.
+Strict tool use is HIPAA eligible, but PHI must not be included in tool schema definitions . The API caches compiled schemas separately from message content, and these cached schemas do not receive the same PHI protections as prompts and responses. Do not include PHI in input_schema property names, enum values, const values, or pattern regular expressions. PHI should only appear in message content (prompts and responses), where it is protected under HIPAA safeguards.
+For ZDR and HIPAA eligibility across all features, see API and data retention .
+
+Next steps
+
+Web fetch tool
+Fetch and read content from specific URLs to bring live web content into Claude's context.
+Tool use with prompt caching
+Cache tool definitions across turns to reduce cost and latency.
+
+Structured outputs
+Get validated JSON responses using the same grammar-constrained sampling.
+Define tools
+Specify tool schemas, write effective descriptions, and control when Claude calls your tools.
+Was this page helpful?
+ 
+Why strict tool use matters for agents
+Quick start
+How it works
+Common use cases
+Data retention
+Next steps

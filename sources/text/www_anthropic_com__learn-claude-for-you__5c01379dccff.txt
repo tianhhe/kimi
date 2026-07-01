@@ -1,0 +1,168 @@
+URL: https://www.anthropic.com/learn/claude-for-you
+SOURCE_GROUP: anthropic-com-sitemap
+TITLE: AI Fluency: Framework and Foundations
+
+Skip to main content Skip to footer
+Research
+Policy
+Commitments
+Learn
+News
+Try Claude
+Anthropic Academy Claude for personal
+Discover how to leverage Claude's capabilities for your individual projects and daily tasks
+Try Claude Get help
+Take a course
+AI Fluency: Framework & Foundations
+Anthropic has partnered with academic experts Prof. Joseph Feller (University College Cork) and Prof. Rick Dakan (Ringling College) to launch an AI fluency course that teaches practical skills for effective, efficient, ethical, and safe AI interaction.
+This course has something for everyone, whether you're new to Claude or a seasoned AI practitioner.
+Start the course
+Course preview
+0 1 Introduction to AI Fluency
+0 2 The AI Fluency Framework
+0 3 Deep Dive 1: What is Generative AI?
+0 4 Delegation
+0 5 Applying Delegation
+0 6 Description
+0 7 Deep Dive 2: Effective Prompting Techniques
+0 8 Discernment
+0 9 The Description-Discernment Loop
+0 10 Diligence
+11 Conclusion
+12 Additional Activities
+Explore by topic
+Meet the models
+Learn about our most intelligent and capable models yet, Claude Sonnet 4.5 and Claude Opus 4.6. Plus, Haiku 4.5 our fastest model for lightweight work.
+Get started
+Try Claude on Claude.ai
+Get the most out of Sonnet 4.5
+Get the most from Claude Opus 4.6
+Insights
+Read the Claude 4.6 announcement blog post
+Visit the Claude Opus 4.6 website
+Visit the Claude Sonnet 4.5 website
+Visit the Haiku 4.5 website
+Artifacts
+Create, manage, and collaborate on files and other content with Claude
+Resources
+Learn how to use Artifacts
+Prototype AI-powered apps with Artifacts
+Projects
+Organize your work and collaborate on complex tasks
+Resources
+Collaborate with Claude on Projects
+Learn how to use Projects
+Skills
+Perform a specific task better by providing detailed instructions with Skills
+Resources
+Learn about Skills
+Use Skills in Claude
+Create custom Skills
+Tools & integrations
+Streamline your workflow by connecting to your favorite tools
+Resources
+Connect your tools to unlock a smarter, more capable AI companion
+Use the GitHub integration
+Use the Google Docs integration
+Use the analysis tool
+AI Fluency for education
+AI Fluency courses for use in education settings.
+Educators
+Introducing Claude for Education
+AI Fluency for educators
+Teaching AI Fluency
+Getting Started with Claude for Education at Your University
+Students
+AI Fluency for students
+Join a Claude campus program
+FAQs on using Claude for Education at your university
+Products
+Claude
+Claude Code
+Claude Code Enterprise
+Claude Cowork
+@Claude
+Claude Design
+Claude Science
+Claude Security
+Claude for Chrome
+Claude for Microsoft 365
+Skills
+Download app
+Pricing
+Log in to Claude
+Models
+Mythos
+Fable
+Opus
+Sonnet
+Haiku
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Enterprise
+Financial services
+Government
+Healthcare
+Legal
+Life sciences
+Nonprofits
+Security
+Small business
+Startups
+Claude Platform
+Overview
+Developer docs
+Pricing
+Ecosystem
+Marketplace
+Regional compliance
+Claude on AWS
+Google Cloud
+Microsoft Foundry
+Console login
+Resources
+Blog
+Claude partner network
+Community
+Connectors
+Courses
+Customer stories
+Engineering at Anthropic
+Events
+Inside Claude Code
+Inside Claude Cowork
+Inside Claude Enterprise
+Plugins
+Powered by Claude
+Service partners
+Tutorials
+Use cases
+Help and security
+Availability
+Status
+Support center
+Company
+Anthropic
+Careers
+Policy
+Economic Futures
+Research
+News
+Claude’s Constitution
+Claude Corps
+Policy on the AI Exponential
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Terms and policies
+Privacy policy
+Consumer health data privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+© 2026 Anthropic PBC

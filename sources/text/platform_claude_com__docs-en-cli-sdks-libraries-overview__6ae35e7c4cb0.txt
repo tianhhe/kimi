@@ -1,0 +1,144 @@
+URL: https://platform.claude.com/docs/en/cli-sdks-libraries/overview
+SOURCE_GROUP: claude-platform-docs
+TITLE: CLI, SDKs, and libraries
+
+Cookie settings
+We use cookies to deliver and improve our services, analyze site usage, and if you agree, to customize or personalize your experience and market our services to you. You can read our Cookie Policy here .
+Customize Customize Cookie Settings Reject Reject All Cookies Accept Accept All Cookies
+Claude Platform Docs
+Messages
+Managed Agents
+Admin
+Resources 
+ API reference
+English   Console Log in
+ 
+
+Search...
+⌘K
+CLI, SDKs, and libraries
+Overview
+ant CLI
+Quickstart Authentication options Using the CLI Scripting and automation
+Client SDKs
+Middleware Python TypeScript C# Go Java PHP Ruby
+Libraries and integrations
+Apple Foundation Models OpenAI SDK compatibility
+ Log in
+ CLI, SDKs, and libraries  Overview
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Loading...
+Claude Platform Docs
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Financial services
+Government
+Life sciences
+Partners
+Claude on AWS
+Claude on Google Cloud
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Company
+Anthropic
+Careers
+Economic Futures
+Research
+News
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Learn
+Blog
+Courses
+Use cases
+Connectors
+Customer stories
+Engineering at Anthropic
+Events
+Powered by Claude
+Service partners
+Startups program
+Help and security
+Availability
+Status
+Support
+Discord
+Terms and policies
+Privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+CLI, SDKs, and libraries
+CLI, SDKs, and libraries
+Copy page
+
+Official tools for building with the Claude API: the ant CLI, client SDKs in seven languages, and framework-specific libraries.
+Copy page
+
+Anthropic provides three kinds of official tooling for building with the Claude API:
+CLI: The ant command-line tool for shell scripting and interactive use.
+Client SDKs: General-purpose Messages API clients for Python, TypeScript, C#, Go, Java, PHP, and Ruby. Each SDK provides idiomatic interfaces, type safety, and built-in support for streaming, retries, and error handling.
+Libraries and integrations: Packages and compatibility layers that expose Claude inside another framework's API surface rather than the Messages API directly.
+
+For the full API specification, see the API reference .
+
+CLI
+ant CLI
+Shell scripting, typed flags, response transforms
+
+Client SDKs
+Python
+Sync and async clients, Pydantic models
+TypeScript
+Node.js, Deno, Bun, and browser support
+C#
+.NET Standard 2.0+, IChatClient integration
+Go
+Context-based cancellation, functional options
+Java
+Builder pattern, CompletableFuture async
+PHP
+Value objects, builder pattern
+Ruby
+Sorbet types, streaming helpers
+
+Libraries and integrations
+Libraries and integrations expose Claude through another framework's API surface. They are not general-purpose Messages API clients.
+Apple Foundation Models
+Swift package for Apple's LanguageModelSession API
+OpenAI SDK compatibility
+Use Claude through the OpenAI SDK surface
+Was this page helpful?
+ 
+CLI
+Client SDKs
+Libraries and integrations

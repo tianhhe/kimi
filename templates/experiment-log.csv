@@ -1,0 +1,2 @@
+experiment_id,start_date,end_date,hypothesis,audience,channel,content_or_campaign,variant_a,variant_b,primary_metric,result,decision,owner,notes
+EXP-001,2026-07-08,,如果把功能表达改成真实任务表达 收藏率会提升,职场白领,小红书,周报内容,功能介绍标题,任务结果标题,收藏率,,继续测,,

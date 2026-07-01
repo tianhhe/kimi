@@ -1,0 +1,131 @@
+URL: https://www.anthropic.com/research/team/frontier-red-team
+SOURCE_GROUP: anthropic-com-sitemap
+TITLE: Frontier Red Team
+
+Skip to main content Skip to footer
+Research
+Policy
+Commitments
+Learn
+News
+Try Claude
+Back to Overview Frontier Red Team
+The Frontier Red Team stress-tests AI systems to understand the full extent of their current capabilities and anticipate what comes next. We provide evidence-based analysis about AI’s implications for cybersecurity, national security, and autonomous systems.
+Research teams: Alignment Economic Research Interpretability Societal Impacts Frontier Red Team
+Frontier Red Team Project Fetch: Phase two
+We report results from our latest test of whether Claude can help Anthropic employees perform sophisticated (and amusing) robotics tasks.
+Read more
+Publications
+Search
+Date Category Title
+Jun 18, 2026 Frontier Red Team
+Project Fetch: Phase two
+Jun 8, 2026 Frontier Red Team
+Measuring LLMs’ impact on N-day exploits
+Jun 3, 2026 Frontier Red Team
+Mapping AI-enabled cyber threats: Insights from the LLM ATT&CK Navigator
+Jun 3, 2026 Policy
+What we learned mapping a year’s worth of AI-enabled cyber threats
+May 22, 2026 Frontier Red Team
+Measuring LLMs’ ability to develop exploits
+Apr 7, 2026 Frontier Red Team
+Assessing Claude Mythos Preview’s cybersecurity capabilities
+Mar 6, 2026 Policy
+Partnering with Mozilla to improve Firefox’s security
+Mar 6, 2026 Frontier Red Team
+Reverse engineering Claude's CVE-2026-2796 exploit
+Feb 5, 2026 Frontier Red Team
+Evaluating and mitigating the growing risk of LLM-discovered 0-days
+Jan 16, 2026 Frontier Red Team
+AI models are showing a greater ability to find and exploit vulnerabilities on realistic cyber ranges
+See more
+Products
+Claude
+Claude Code
+Claude Code Enterprise
+Claude Cowork
+@Claude
+Claude Design
+Claude Science
+Claude Security
+Claude for Chrome
+Claude for Microsoft 365
+Skills
+Download app
+Pricing
+Log in to Claude
+Models
+Mythos
+Fable
+Opus
+Sonnet
+Haiku
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Enterprise
+Financial services
+Government
+Healthcare
+Legal
+Life sciences
+Nonprofits
+Security
+Small business
+Startups
+Claude Platform
+Overview
+Developer docs
+Pricing
+Ecosystem
+Marketplace
+Regional compliance
+Claude on AWS
+Google Cloud
+Microsoft Foundry
+Console login
+Resources
+Blog
+Claude partner network
+Community
+Connectors
+Courses
+Customer stories
+Engineering at Anthropic
+Events
+Inside Claude Code
+Inside Claude Cowork
+Inside Claude Enterprise
+Plugins
+Powered by Claude
+Service partners
+Tutorials
+Use cases
+Help and security
+Availability
+Status
+Support center
+Company
+Anthropic
+Careers
+Policy
+Economic Futures
+Research
+News
+Claude’s Constitution
+Claude Corps
+Policy on the AI Exponential
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Terms and policies
+Privacy policy
+Consumer health data privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+© 2026 Anthropic PBC

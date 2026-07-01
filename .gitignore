@@ -1,0 +1,10 @@
+/.chrome-opencli-profile*/
+/.edge-opencli-profile*/
+/.npm-cache/
+/.opencli-extension*/
+/opencli-extension-*.zip
+/node_modules/
+/sources/raw/
+*.log
+Thumbs.db
+.DS_Store

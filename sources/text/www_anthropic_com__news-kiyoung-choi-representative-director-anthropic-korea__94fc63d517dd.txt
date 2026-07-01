@@ -1,0 +1,122 @@
+URL: https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea
+SOURCE_GROUP: anthropic-com-sitemap
+TITLE: Anthropic appoints KiYoung Choi as Representative Director of Korea
+
+Skip to main content Skip to footer
+Research
+Policy
+Commitments
+Learn
+News
+Try Claude
+Announcements
+Anthropic appoints KiYoung Choi as Representative Director of Korea ahead of Seoul office opening
+May 26, 2026
+Korea is one of the most active markets in the world for Claude.ai. According to our latest Economic Index , Koreans use Claude at more than 3.5 times the rate expected for the population size, with usage skewing heavily toward technical and creative work. To support that momentum, KiYoung Choi is joining Anthropic as Representative Director of Korea, ahead of the opening of our Seoul office . In the coming weeks, senior leadership from Anthropic will travel to Seoul to officially open the office and meet with customers.
+KiYoung joins from Snowflake, where he served as General Manager for Korea. He brings over three decades of experience leading technology businesses across Korea and Asia-Pacific. Throughout his career, he has helped some of the largest Korean enterprises navigate transformative shifts in technology, ranging from cloud computing to AI adoption. Previously, he held country leadership roles at Google Cloud, Adobe, Autodesk, and Microsoft.
+“Korea is one of the most sophisticated AI markets in the world, leading in hardware innovation, developer activity, and enterprise adoption,” KiYoung said. “Korean organizations combine technical depth with a commitment to responsible deployment, which is exactly where Anthropic operates. That alignment is what brought me to Anthropic—and why we are focused on building in Korea for the long term.”
+At Anthropic, KiYoung will lead a go-to-market strategy that supports the unique uses of Claude in Korea. Innovative startups and leading enterprises in Korea are already building with Claude. Law&Company uses Claude to power its AI legal assistant, helping lawyers reduce time spent on legal research and document preparation while maintaining high accuracy for sensitive legal work. SK Telecom , the largest telecommunications company in Korea, chose Claude to build a custom AI customer service model, helping improve service quality and support customer service teams at SKT.
+“Korea is one of the markets where we’ve seen the most enthusiasm for Claude, and few people understand its technology landscape the way KiYoung does,” said Chris Ciauri, Managing Director of International, Anthropic. “He’ll build the team and the local partnerships to support how Korean organizations are putting Claude to work.”
+Our Korea team will focus on building partnerships with enterprises and startups, engaging with government and research institutions, and supporting the vibrant developer community building with Claude.
+For more information about career opportunities in our Seoul office, visit anthropic.com/careers .
+Related content
+Introducing Claude Sonnet 5
+Sonnet 5 delivers frontier performance across coding, agents, and professional work at scale.
+Read more
+Redeploying Fable 5
+Fable 5 returns globally July 1. We're also proposing an industry-wide framework for scoring jailbreak severity, together with Amazon, Microsoft, Google, and other Glasswing partners.
+Read more
+Claude Science, an AI workbench for scientists, is now available
+Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources.
+Read more
+Products
+Claude
+Claude Code
+Claude Code Enterprise
+Claude Cowork
+@Claude
+Claude Design
+Claude Science
+Claude Security
+Claude for Chrome
+Claude for Microsoft 365
+Skills
+Download app
+Pricing
+Log in to Claude
+Models
+Mythos
+Fable
+Opus
+Sonnet
+Haiku
+Solutions
+AI agents
+Code modernization
+Coding
+Customer support
+Education
+Enterprise
+Financial services
+Government
+Healthcare
+Legal
+Life sciences
+Nonprofits
+Security
+Small business
+Startups
+Claude Platform
+Overview
+Developer docs
+Pricing
+Ecosystem
+Marketplace
+Regional compliance
+Claude on AWS
+Google Cloud
+Microsoft Foundry
+Console login
+Resources
+Blog
+Claude partner network
+Community
+Connectors
+Courses
+Customer stories
+Engineering at Anthropic
+Events
+Inside Claude Code
+Inside Claude Cowork
+Inside Claude Enterprise
+Plugins
+Powered by Claude
+Service partners
+Tutorials
+Use cases
+Help and security
+Availability
+Status
+Support center
+Company
+Anthropic
+Careers
+Policy
+Economic Futures
+Research
+News
+Claude’s Constitution
+Claude Corps
+Policy on the AI Exponential
+Responsible Scaling Policy
+Security and compliance
+Transparency
+Terms and policies
+Privacy policy
+Consumer health data privacy policy
+Responsible disclosure policy
+Terms of service: Commercial
+Terms of service: Consumer
+Usage policy
+© 2026 Anthropic PBC
+Anthropic appoints KiYoung Choi as Representative Director of Korea \ Anthropic
