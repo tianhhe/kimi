@@ -56,6 +56,7 @@
 | `docs/14-first-batch-content-scripts.md` | 快速生产首批视频/图文时 | 24 条可拍摄或改写脚本 |
 | `docs/19-platform-column-script-ops-manual.md` | 第 2 月内容、站点资产承接、栏目升级时 | 平台栏目、站点资产映射、选题和脚本骨架 |
 | `docs/27-kimi-social-growth-ops-v2.md` | 需要把账号矩阵、栏目、达人、6 周战役和指标串成一套执行打法时 | 社媒增长 V2 操作系统 |
+| `docs/28-kimi-ai-work-fluency-system.md` | 需要把“功能教程”升级成“AI工作力 + 任务交付 + 工作包体系”时 | 内容教育主线、8维受众、栏目职责 |
 | `docs/26-document-system-cleanup-recommendations.md` | 文档太散、需要整理或交接时 | 文档维护规则、合并/保留建议 |
 
 ### D. 模板与数据表
@@ -75,6 +76,8 @@
 | `templates/competitor-tracker.csv` | 竞品动态追踪 | 每周五补充新观察 |
 | `templates/research-to-content-pipeline.csv` | 研究/竞品/语料洞察转内容流水线 | 每周一把研究信号改成栏目、选题和资产 |
 | `templates/comment-insight-log.csv` | 评论区、私信、社群提问转任务/FAQ/模板 | 每天记录高频问题和高意向任务 |
+| `templates/use-case-library.csv` | 多维用例库 | 把人群、任务、材料、功能和交付物挂成长期资产池 |
+| `templates/work-package-library.csv` | 工作包库 | 把模板、输入清单、验收标准和栏目挂钩 |
 | `templates/platform-column-scorecard.csv` | 平台栏目评分 | 每周复盘时判断保留、加码、下线 |
 | `templates/growth-funnel-dashboard.csv` | 内容到转化漏斗 | 每周复盘前更新核心数据 |
 | `templates/feature-usage-tracker.csv` | 功能使用率追踪 | GTM 后追踪功能激活、完成、复用 |
@@ -93,6 +96,7 @@
 | 竞品观察 | `docs/07-competitor-library-index.md`、`docs/09-competitor-deep-dive.md`、`docs/18-competitor-gtm-social-deep-dive.md` | `templates/competitor-tracker.csv` | 竞品变化、Kimi 回应选题、GTM 风险 |
 | 研究信号变选题 | `docs/22-priority-sections-deep-read.md`、`docs/24-claude-corpus-additional-insights.md`、`docs/25-competitor-social-media-playbook-v2.md` | `templates/research-to-content-pipeline.csv` | 把语料/竞品/研究洞察变成栏目、选题、模板和案例动作 |
 | 评论和私信承接 | `docs/19-platform-column-script-ops-manual.md`、`docs/27-kimi-social-growth-ops-v2.md` | `templates/comment-insight-log.csv`、`templates/content-brief-template.md` | 高频评论变 FAQ、模板、短视频和社群任务 |
+| 用例库和工作包建设 | `docs/28-kimi-ai-work-fluency-system.md`、`docs/27-kimi-social-growth-ops-v2.md` | `templates/use-case-library.csv`、`templates/work-package-library.csv` | 把栏目、脚本和模板沉淀成长期可复用资产 |
 | 周复盘 | `docs/06-weekly-review-operating-rhythm.md`、`docs/16-growth-funnel-and-feature-usage.md` | `templates/weekly-review-template.md`、`templates/growth-funnel-dashboard.csv`、`templates/platform-column-scorecard.csv` | 下周加码/暂停/重写的决策 |
 | 月度规划 | `docs/01-growth-masterplan.md`、`docs/02-goals-budget-metrics.md`、`docs/15-growth-system-architecture.md`、`docs/23-kimi-audience-segmentation-v2.md` | `templates/month-1-content-calendar.csv` 或 `templates/month-2-content-calendar.csv`、`templates/experiment-log.csv` | 月度主线、预算、人群、内容战役 |
 

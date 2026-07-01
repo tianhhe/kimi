@@ -1,0 +1,6 @@
+package_id,package_name,target_audience,core_task,inputs_required,output_bundle,review_checklist,related_column,related_feature,platform_entry,asset_status,owner,next_update
+PKG-001,Kimi产品增长工作包,产品/PMM/增长,把反馈和竞品资料变成路线图证据,反馈表;访谈;竞品材料,证据表;优先级建议;brief,来源完整;结论可追溯;建议可执行,Kimi for 产品,Kimi Work;Deep Research,公众号/知乎,draft,PMM,2026-07-09
+PKG-002,Kimi销售会前准备包,销售/CS/BD,客户会前 20 分钟准备,客户官网;纪要;CRM摘要,客户研究包;问题清单;跟进邮件草稿,关键信息无缺失;风险明确;下一步清楚,一件事交给Kimi,Kimi Work;Agent,抖音/视频号,draft,销售运营,2026-07-09
+PKG-003,Kimi论文速读工作包,研究生/科研助理,多篇论文快速综述,论文PDF;课题方向;导师要求,综述摘要;对比表;汇报大纲,引用准确;缺口清楚;观点未越界,Kimi学生版,Kimi Work;Docs;Slides,B站/小红书,draft,教育增长,2026-07-09
+PKG-004,Kimi活动复盘工作包,运营/内容团队,活动结束后快速复盘,数据表;评论;投放记录,复盘文档;问题列表;下周动作,数据口径一致;建议可落地;有owner,Kimi Work 101,Kimi Work;Sheets,小红书/公众号,draft,内容策略,2026-07-09
+PKG-005,Kimi制度FAQ工作包,HR/法务/行政,把制度文档转成可执行FAQ,制度文件;历史问答,FAQ;风险提示;升级路径,高风险内容有人工复核;表达清楚,哪些任务不该直接交给Kimi,Kimi Work;Docs,知乎/公众号,draft,HR运营,2026-07-09

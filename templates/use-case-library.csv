@@ -1,0 +1,7 @@
+use_case_id,title,primary_audience,company_stage,department,industry,task_type,input_materials,input_complexity,risk_level,feature_stack,deliverable,estimated_time,cta,owner,status,next_action
+UC-001,产品反馈聚类到路线图证据包,产品/PMM/增长,小团队,产品,软件,研究与决策,用户反馈表+访谈记录+客服工单,多文档,需人工复核,Kimi Work;Deep Research;Docs,路线图证据包,45m,领取任务卡,PMM,draft,补真实案例
+UC-002,客户会前研究包,销售/CS/BD,SMB,销售,通用B2B,客户研究,客户官网+历史纪要+CRM摘要,跨系统,需人工复核,Kimi Work;Agent,会前研究包,20m,试同款模板,销售运营,draft,补输入清单
+UC-003,论文资料到答辩大纲,研究生/科研助理,个人,研究,教育,文献整理与汇报,论文PDF+笔记+导师要求,长上下文,需人工复核,Kimi Work;Docs;Slides,答辩大纲,60m,下载工作包,教育增长,draft,补输出样例
+UC-004,活动数据到复盘方案,运营/市场,小团队,运营,内容/电商,复盘分析,活动数据表+投放记录+评论反馈,多文档,低风险草稿,Kimi Work;Sheets;Docs,活动复盘方案,30m,查看脚本,内容策略,draft,补验收标准
+UC-005,制度文档到员工FAQ,HR/法务/行政,企业,HR,通用企业,知识整理,制度文件+历史问答,多文档,高风险需复核,Kimi Work;Docs,员工FAQ,40m,领取FAQ模板,HR运营,draft,补治理说明
+UC-006,竞品资料到周报简报,创始人/管理者,小团队,管理层,软件/AI,研究与汇报,网页链接+截图+内部观点,跨格式,需人工复核,Kimi Work;Deep Research;Docs,竞品周报简报,35m,订阅栏目,增长负责人,draft,补社媒入口

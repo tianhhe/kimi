@@ -48,6 +48,7 @@
 | `docs/25-competitor-social-media-playbook-v2.md` | 竞品社媒栏目、标题模式、非代码人群机会和响应机制 | 竞品研究、内容、达人运营 |
 | `docs/26-document-system-cleanup-recommendations.md` | 文档体系整理建议和后续维护规则 | 增长负责人、项目管理 |
 | `docs/27-kimi-social-growth-ops-v2.md` | Kimi 社媒增长运营 V2：账号矩阵、栏目、达人、6 周战役、指标 | 全体增长运营 |
+| `docs/28-kimi-ai-work-fluency-system.md` | Kimi AI工作力、内容教育主线、8维受众与工作包体系 | 增长负责人、内容策略、PMM |
 | `templates/content-brief-template.md` | 单条内容 brief 模板 | 内容负责人 |
 | `templates/creator-brief-template.md` | 达人合作 brief 模板 | 达人运营 |
 | `templates/weekly-review-template.md` | 周复盘填报模板 | 增长负责人 |
@@ -56,6 +57,8 @@
 | `templates/competitor-tracker.csv` | 竞品动态追踪表 | 竞品研究 |
 | `templates/research-to-content-pipeline.csv` | 研究/竞品/语料洞察转内容流水线 | 内容策略、PMM |
 | `templates/comment-insight-log.csv` | 评论/私信/社群问题转 FAQ、模板和选题 | 社媒运营、社群运营 |
+| `templates/use-case-library.csv` | 多维用例库：把人群、任务、材料、功能、交付物沉淀成长期资产池 | 内容策略、PMM、销售赋能 |
+| `templates/work-package-library.csv` | 工作包库：把模板、输入清单、验收标准和栏目挂钩 | 内容策略、社媒运营、教育运营 |
 | `templates/experiment-log.csv` | 增长实验记录表 | 增长负责人 |
 | `templates/month-1-content-calendar.csv` | 首月 40 条跨平台排期 | 内容负责人、渠道运营 |
 | `templates/growth-funnel-dashboard.csv` | 增长漏斗数据表 | 数据、增长负责人 |
