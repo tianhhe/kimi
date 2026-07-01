@@ -6,12 +6,13 @@
 
 ## 使用方式
 
+0. 先打开 `docs/00-operating-index.md`。它是日常工作台首页，告诉你本周内容、GTM、达人、竞品、复盘分别从哪里开始。
 1. 每月第一周：阅读 `docs/01-growth-masterplan.md` 和 `docs/02-goals-budget-metrics.md`，确认当月主战场、预算、北极星指标。
-2. 每周一：用 `templates/weekly-review-template.md` 复盘上周，用 `templates/content-calendar.csv` 排本周内容。
-3. 每周二到周四：按 `docs/03-content-pillars.md` 生产内容，按 `templates/content-brief-template.md` 写单条内容 brief。
+2. 每周一：用 `templates/weekly-review-template.md` 复盘上周，用 `templates/content-calendar.csv` 或 `templates/weekly-social-ops-sprint.csv` 排本周内容。
+3. 每周二到周四：按 `docs/03-content-pillars.md`、`docs/12-kimi-platform-content-strategy.md`、`docs/27-kimi-social-growth-ops-v2.md` 生产内容，按 `templates/content-brief-template.md` 写单条 content brief。
 4. 每周三和周五：按 `docs/04-creator-campaign-playbook.md` 筛达人、发 brief、回收报价与脚本。
 5. 每次产品发布、功能更新或节点活动前：跑一遍 `docs/05-gtm-checklist.md`。
-6. 每周五：更新 `templates/competitor-tracker.csv`，把重要变化沉淀到 `docs/07-competitor-library-index.md`。
+6. 每周五：更新 `templates/competitor-tracker.csv`，把重要变化沉淀到 `docs/25-competitor-social-media-playbook-v2.md` 和下周选题。
 7. 每次做新功能 GTM 前：先读 `docs/20-anthropic-site-content-system.md`、`docs/21-claude-site-content-system.md`、`docs/22-priority-sections-deep-read.md`，把功能放进 Research / Product / Solutions / Resources 四层资产里。
 8. 每次做人群、投放和达人规划前：先读 `docs/23-kimi-audience-segmentation-v2.md` 和 `templates/audience-segment-matrix-v2.csv`，按 P0/P1/P2 和任务价值来定预算。
 
@@ -19,6 +20,7 @@
 
 | 文件 | 用途 | 主要使用者 |
 |---|---|---|
+| `docs/00-operating-index.md` | 工作台首页，串起策略、执行、模板、复盘入口 | 全员 |
 | `docs/01-growth-masterplan.md` | 社媒增长总纲，定义定位、人群、打法、节奏 | 负责人、内容、投放、产品市场 |
 | `docs/02-goals-budget-metrics.md` | 目标、预算、指标口径和看板机制 | 负责人、数据、投放 |
 | `docs/03-content-pillars.md` | 内容栏目、选题池、内容结构和发布节奏 | 内容、设计、视频剪辑 |
@@ -42,6 +44,10 @@
 | `docs/21-claude-site-content-system.md` | Claude 产品站全站阅读和转化资产拆解 | PMM、内容、产品 |
 | `docs/22-priority-sections-deep-read.md` | Anthropic Research 与 Claude Products/Solutions/Resources 精读 | 增长负责人、内容策略 |
 | `docs/23-kimi-audience-segmentation-v2.md` | Kimi 高付费受众 V2 分层和投放判断 | 增长负责人、投放、达人运营 |
+| `docs/24-claude-corpus-additional-insights.md` | 继续阅读 Claude/Anthropic 本地语料后的新增可迁移洞察 | 内容策略、PMM |
+| `docs/25-competitor-social-media-playbook-v2.md` | 竞品社媒栏目、标题模式、非代码人群机会和响应机制 | 竞品研究、内容、达人运营 |
+| `docs/26-document-system-cleanup-recommendations.md` | 文档体系整理建议和后续维护规则 | 增长负责人、项目管理 |
+| `docs/27-kimi-social-growth-ops-v2.md` | Kimi 社媒增长运营 V2：账号矩阵、栏目、达人、6 周战役、指标 | 全体增长运营 |
 | `templates/content-brief-template.md` | 单条内容 brief 模板 | 内容负责人 |
 | `templates/creator-brief-template.md` | 达人合作 brief 模板 | 达人运营 |
 | `templates/weekly-review-template.md` | 周复盘填报模板 | 增长负责人 |
@@ -56,6 +62,7 @@
 | `templates/month-2-content-calendar.csv` | 第 2 月 56 条内容排期，含站点资产承接 | 内容负责人 |
 | `templates/platform-column-scorecard.csv` | 平台栏目评分表，追踪栏目、人群、功能、资产、漏斗 | 增长负责人、渠道运营 |
 | `templates/audience-segment-matrix-v2.csv` | P0/P1/P2 受众矩阵，含任务、付费触发、平台和指标 | 投放、达人运营、内容策略 |
+| `templates/weekly-social-ops-sprint.csv` | 6 周社媒增长战役排期表 | 增长负责人、内容、达人运营 |
 
 ## 北极星指标
 
